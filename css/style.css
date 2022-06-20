@@ -48,6 +48,7 @@
 	background:#FEAE4A;
 	min-height: 100vh;
 	transition: 550ms ;
+	 margin-top:20px ;
 }
 .body {
 	display: flex;
@@ -118,4 +119,11 @@
 }
 #checkbox:checked ~ .body .side-bar a span{
 	display: none;
+}
+.container{
+	display:flex;
+
+}
+ .premeire{
+	width: 900px;
 }
