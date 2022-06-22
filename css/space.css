@@ -157,29 +157,9 @@ div .img{
 	margin-bottom: 20px;
 	text-align: center;
 }
-.salle{
-	position: relative;
-	z-index: 1;
-}
-.deux{
-	position: absolute;
-	z-index: 2;
-}
-/* .break{
-	margin-left: 8%;
-	margin-right: 8%;
-	margin-top: 50px;
-	margin-bottom: 40px;
-	padding: 10px;
-	color:blue;
-} */
-.espace{
-	padding: 5px;
-	color: #FEAE4A;
-}
 
- .section-portfolio h1{
-	text-align: center;
+.salle{
+	display: flex;
 }
 
 @media screen and(min-width:900px) {
