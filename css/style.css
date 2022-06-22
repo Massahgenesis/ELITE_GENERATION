@@ -188,7 +188,6 @@ margin-left: 60%;
 	background-color: #E40C14;
 	color: white;
 	
-
 }
 
 .programme p{
@@ -207,25 +206,195 @@ margin-left: 60%;
 }
 .labusiness{
 	max-width: 100%;
+	height: 30%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-left: 20%;
-	margin-right: 20%;
 	position: absolute;
 	z-index: 3;
+	margin-top: 15%;
+	
+
 	
 }
-.descrip{
+.descrip {
 	max-width: 50%;
+	height: 200px;
+	background-color: rgba(255, 255, 255, 0);
 }
-.business{
+.descrip3{
+	margin-top: 40px;
+}
+.descrip2{
+	margin-bottom: 40px;
+}
+.business {
 	max-width: 50%;
-}
+	height: 30%;
+	background-color: rgba(255, 255, 255, 0);}
 .s2{
 	position: relative;
 	z-index: 2;
 }
+.energy{
+	background-color: #EA551C;
+	height: 50px;
+    width: 300px;
+
+
+
+
+}
+.healt{
+background-color: #03A1E4;
+height: 50px;
+width: 300px;
+margin-top: 30px;
+
+
+}
+.agri{
+background-color: #FBB02D;
+height: 50px;
+width: 300px;
+margin-top: 30px;
+
+
+}
+.formation p{
+	text-align: center;	
+	width: 90%;
+	 background-color: #232D84;
+	 height: 100px;
+	 margin: 100px;
+	 color: #fff;
+ }
+ .entrepreneuriat{
+	max-width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 50px;
+ }
+ .entrepreneuriat p{
+max-width: 50%;
+ }
+ .entrepreneuriat img{
+	max-width: 50%;
+ }
+
+ .s3 button{
+	width: 150px;
+	margin-left: 50%;
+	margin-right: 20%;
+	margin-top: 50px;
+	padding: 10px;
+	background-color: #E40C14;
+	color: white;
+	
+
+}
+
+.ENS p{
+	text-align: center;	
+	width: 90%;
+	 background-color: #232D84;
+	 height: 100px;
+	 margin: 100px;
+	 color: #fff;
+ }
+.incubator{
+	margin: 100px;
+}
+.s4 button{
+	width: 150px;
+	margin-left: 50%;
+	margin-right: 20%;
+	margin-top: 50px;
+	padding: 10px;
+	background-color: #E40C14;
+	color: white;
+}
+.s5 p{
+	text-align: center;	
+	width: 90%;
+	background-color: #232D84;
+	height: 100px;
+	margin: 100px;
+	color: #fff;
+}
+.s5{
+	position: relative;
+	z-index: 2;
+}
+.s6{
+	position: absolute;
+	z-index: 4;
+	background-color: #26e4f2;
+	;
+	margin-top: 25%;
+}
+.s7 p {
+	text-align: center;	
+	width: 90%;
+	background-color: #232D84;
+	height: 100px;
+	margin: 100px;
+	color: #fff;
+}
+.box{
+	display: flex;
+	justify-content: space-around;
+	margin-top: 100px;
+}
+.TITRE{
+	text-align: center;	
+	width: 90%;
+	margin: 100px;
+	color: #E40C14;
+	font-size: 40px;
+}
+.footer{
+	width: 100%;
+	height: 600px;
+	background-color: #c7b79c96;
+}
+.form{
+	margin-left: 40%;
+}
+.form input{
+	width: 400px;
+	height: 50px;
+	border-top: none;
+	border-right: none;
+	background-color: rgba(255, 255, 255, 0);
+}
+.checkbox{
+	margin-left: 40%;
+	margin-top: 20px;
+}
+.checkbox input{
+	padding: 10px;
+}
+.checkbox button{
+	text-align: center;	
+	margin-left: 100px;
+	margin-right: 100px;
+	margin-top: 50px;
+	background: #26E6F2;
+	padding: 10px;
+
+}
+.contact{
+	width: 100%;
+	height: 200px;
+	background-color: #c7b79c65;
+}
+.copyright{
+	width: 100%;
+	height: 50px;
+	background-color: #c7b79c00;
+}
+
 
 
 
@@ -242,56 +411,37 @@ margin-left: 60%;
     background-color: transparent;
     border: 3px solid rgb(255, 255, 255,0.8);
     position: relative;
+	margin-top: 20px;
 }
 
 .box div:nth-child(1){
-    top: 12%;
-    left: 42%;
     animation: animate 7s linear infinite;
 }
 .box div:nth-child(2){
-    top: 12%;
-    left: 42%;
     animation: animate 7s linear infinite;
 }
 .box div:nth-child(3){
-    top: 17%;
-    left: 6%;
     animation: animate 9s linear infinite;
 }
 .box div:nth-child(4){
-    top: 20%;
-    left: 60%;
     animation: animate 10s linear infinite;
 }
 .box div:nth-child(5){
-    top: 67%;
-    left: 10%;
     animation: animate 6s linear infinite;
 }
 .box div:nth-child(6){
-    top: 80%;
-    left: 70%;
     animation: animate 12s linear infinite;
 }
 .box div:nth-child(7){
-    top: 60%;
-    left: 80%;
     animation: animate 15s linear infinite;
 }
 .box div:nth-child(8){
-    top: 32%;
-    left: 25%;
     animation: animate 16s linear infinite;
 }
 .box div:nth-child(9){
-    top: 80%;
-    left: 25%;
     animation: animate 9s linear infinite;
 }
 .box div:nth-child(10){
-    top: 20%;
-    left: 80%;
     animation: animate 5s linear infinite;
 }
 @keyframes animate{
@@ -300,7 +450,7 @@ margin-left: 60%;
         opacity: 0;
     }
     100%{
-        transform: scale(1.3) translateY(-90px) rotate(360deg);
+        transform: scale(1.3) translateY(-90px) rotate(0);
         opacity: 1;
 }
 }
