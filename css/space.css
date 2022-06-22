@@ -157,10 +157,53 @@ div .img{
 	margin-bottom: 20px;
 	text-align: center;
 }
+.drapeau img{
+	width: 70px;
+	margin: 0 5px;
+}
+.break-first{
+
+	background-color: red;
+	width: 700px;
+	height: 5px;
+	justify-content: center;
+	border: none;
+	margin:10px auto;
+}
+ .energy{
+	font-size: 50px;
+	background-color:#c7b79c96;
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 10px;
+}
 
 .salle{
 	display: flex;
 }
+.section-1 .premiere{
+
+	width: 700px;
+}
+.section-1 .deux{
+
+	width: 400px;
+	background-color: #FEAE4A;
+}
+
+.section-portfolio{
+
+	background-color: #FEAE4A;
+	margin:0 5%;
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+.section-portfolio h1{
+	text-align: center;
+	color:red;
+	font-size: 50px;
+}
+
 
 @media screen and(min-width:900px) {
 
