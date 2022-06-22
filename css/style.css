@@ -48,6 +48,7 @@
 	background:#FEAE4A;
 	min-height: 100vh;
 	transition: 550ms ;
+	 margin-top:20px ;
 }
 .body {
 	display: flex;
@@ -118,4 +119,45 @@
 }
 #checkbox:checked ~ .body .side-bar a span{
 	display: none;
+}
+.nabar-brand img{
+	width: 50px;
+}
+.navbar-brand {
+	margin-right:0 ;
+	padding: 0 20;
+}
+.navbar-nav {
+	align-items: center;
+}
+.navbar .navbar-nav .nav-link{
+	color: red;
+	font-size: 25px;
+	padding: 10 20;
+}
+div .img{
+	align-items: center;
+}
+.salle{
+	position: relative;
+	z-index: 1;
+}
+.deux{
+	position: absolute;
+	z-index: 2;
+}
+.break{
+	margin-left: 8%;
+	margin-right: 8%;
+	margin-top: 50px;
+	margin-bottom: 40px;
+	padding: 10px;
+	color:blue;
+}
+
+@media screen and(min-width:900px) {
+
+	.nabar-brand img{
+		width: 50px;
+	}
 }
