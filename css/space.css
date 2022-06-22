@@ -163,9 +163,9 @@ div .img{
 }
 .break-first{
 
-	background-color: red;
+	background-color: #EA551C;
 	width: 700px;
-	height: 5px;
+	height: 2px;
 	justify-content: center;
 	border: none;
 	margin:10px auto;
