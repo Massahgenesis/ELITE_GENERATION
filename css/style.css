@@ -121,22 +121,41 @@
 	display: none;
 }
 .nabar-brand img{
-	width: 50px;
+	width: 80px;
+	margin: 15PX;
 }
 .navbar-brand {
-	margin-right:0 ;
+	margin-left: 15px;
 	padding: 0 20;
 }
 .navbar-nav {
 	align-items: center;
 }
 .navbar .navbar-nav .nav-link{
-	color: red;
-	font-size: 25px;
-	padding: 10 20;
+	color:black;
+	font-size: 20px;
+	padding: 5 20;
+}
+
+ul li a:hover{
+
+	background-color:#FEAE4A;
+	border-radius: 20px;
+	transform: translateY(3px);
+	transition: 1s;
+}
+.navbar  {
+	background-color: #c7b79c96;
 }
 div .img{
 	align-items: center;
+}
+
+.drapeau{
+
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 .salle{
 	position: relative;
@@ -146,18 +165,27 @@ div .img{
 	position: absolute;
 	z-index: 2;
 }
-.break{
+/* .break{
 	margin-left: 8%;
 	margin-right: 8%;
 	margin-top: 50px;
 	margin-bottom: 40px;
 	padding: 10px;
 	color:blue;
+} */
+.espace{
+	padding: 5px;
+	color: #FEAE4A;
+}
+
+ .section-portfolio h1{
+	text-align: center;
 }
 
 @media screen and(min-width:900px) {
 
 	.nabar-brand img{
-		width: 50px;
+		width: 100px;
 	}
+	
 }
