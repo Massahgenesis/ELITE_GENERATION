@@ -120,6 +120,9 @@
 #checkbox:checked ~ .body .side-bar a span{
 	display: none;
 }
+
+	/************** stylisation de la navbar **********/
+
 .nabar-brand img{
 	width: 80px;
 	margin: 15PX;
@@ -161,6 +164,9 @@ div .img{
 	width: 70px;
 	margin: 0 5px;
 }
+
+	/*************** fin de la navba ***********/
+	/******* traitement du hr *******/
 .break-first{
 
 	background-color: #EA551C;
@@ -170,6 +176,10 @@ div .img{
 	border: none;
 	margin:10px auto;
 }
+
+	/******* fin du traitement du hr ******/
+
+
  .energy{
 	font-size: 50px;
 	background-color:#c7b79c96;
@@ -177,6 +187,8 @@ div .img{
 	text-align: center;
 	padding: 10px;
 }
+
+	/*********** traitement des images de la premiere section ******/
 
 .salle{
 	display: flex;
@@ -191,6 +203,8 @@ div .img{
 	background-color: #FEAE4A;
 }
 
+	/********* traitment de la section portfolio **********/
+
 .section-portfolio{
 
 	background-color: #FEAE4A;
@@ -204,6 +218,17 @@ div .img{
 	font-size: 50px;
 }
 
+/********** fin de section portfolio ********/
+
+/********** traitement du footer *********/
+
+.box{
+
+	width: 300px;
+	padding: 40px;
+}
+
+/*********** les medias queries ********/
 
 @media screen and(min-width:900px) {
 
