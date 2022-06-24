@@ -184,7 +184,153 @@ div .img{
 	text-align: center;
 }
 
+/*=======================programmes=============*/
+.secion-1{
+	width: 100%;
+	position: relative;
+	left: 0;
+	margin: 0;
+}
+.program img{
+	width: 100%;
+	padding-top: 20px;
+	background: rgba(199, 183, 156, 0.24);;
 
+}
+.postulez p{
+	background-color: #C7B79C;
+	padding: 25px;
+	width: 100%;
+	margin: 0;
+}
+.postulez p a{
+	text-decoration: none;
+	background:  #019FE3;
+	padding: 18px;
+	border-radius: 50px;
+	color: white;
+
+}
+.postulez{
+	bottom: 30px;
+	width: 100%;
+
+}
+.section-2{
+	background: rgba(199, 183, 156, 0.24);
+}
+.section-3{
+	background: center/cover url(../Images/img25.webp);
+	width: 100%;
+
+}
+.section{
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	margin: 20px 20px;
+
+}
+.section-3 h1{
+	color: white;
+	text-align: center;
+	font-size: 30px;
+	margin-top: 10px;
+}
+.section-a h2{
+	text-align: center;
+
+}
+.section-a p{
+	text-align: center;
+	background: #0F056B;
+	color: white;
+
+}
+.section-a{
+	background: #0F056B;
+	width: 300px;
+	margin-right: 20px;
+
+}
+.section-4 h1{
+	text-align: center;
+	margin-top: 20px;
+	font-size: 30px;
+}
+
+.section-4{
+	background: rgba(199, 183, 156, 0.24);
+	width: 100%;
+
+}
+.sectionn-a{
+	background: #019FE3;
+	width: 300px;
+	margin-right: 20px;
+	height: 420px;
+
+
+}
+.sectionn{
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	margin: 20px 20px;
+
+}
+.sectionn-a h2{
+	text-align: center;
+	top: 20px;
+}
+.sectionn-a h4{
+	text-align: center;
+	font-size: 15px;
+}
+.sectionn-a p{
+	text-align: center;
+	font-size: 15px;
+	border-radius: 50px;
+	padding: 10px;
+	margin:200px 20px;
+	color: white;
+	background: #26E6F2;;
+}
+.sectionn-5 h1{
+	text-align: center;
+}
+.sectionn-6{
+	background: rgba(199, 183, 156, 0.35);;
+}
+.sectio{
+	display: flex;
+	justify-content: space-around;
+	color: white;
+	margin: 20px 20px;
+
+}
+.sectio-a h2{
+	text-align: center;
+	top: 20px;
+}
+.sectio-a p{
+	text-align: center;
+	font-size: 15px;
+	border-radius: 50px;
+	padding: 10px;
+	/*margin:200px 20px;*/
+	color: white;
+	background:  #EA551C;
+}
+.sectio-a{
+	background:  #EA551C;
+	width: 300px;
+	margin-right: 20px;
+	padding-top: 20px;
+	/*height: 450px;*/
+
+
+}
 @media screen and(min-width:900px) {
 
 	.nabar-brand img{
