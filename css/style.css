@@ -603,3 +603,21 @@ div .img {
 	}
 }
 /* fin animation */
+
+
+.arrow{
+    
+	width: 35px;
+	height: 35px;
+	right: 30px;
+	
+	
+}	
+
+.arrow i{
+	width: 35px;
+	  bottom: 50px;
+	  right: 30px;
+	  font-size: 20px;
+  }
+	
