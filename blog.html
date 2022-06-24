@@ -31,7 +31,7 @@
 					<img src="Images/img3.webp" alt="le logo" width="150px">
 				  </a>
 				  <li class="nav-item ">
-					<a class="nav-link " href="#">
+					<a class="nav-link " href="/space.html">
 					  Energy Space
 					</a>
 				  <li class="nav-item">
@@ -53,7 +53,6 @@
 			<div class="onglets">
 			  <a href="#">Home</a>
 			  <a href="formation.html">Formations</a>
-			  <a href="#">Articles</a>
 			</div>
 		  </nav>
 		  <section class="articles">
@@ -149,7 +148,7 @@
 				countvisits();
 		  
 				function countvisits() {
-				  fetch('https://api.countapi.xyz/update/ezokovich/maz/?amount=-1')
+				  fetch('https://api.countapi.xyz/update/ezokovich/maz/?amount=1')
 					.then((res) => res.json())
 					.then((res) => {
 					  countEl.innerHTML = res.value;
