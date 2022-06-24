@@ -1,200 +1,324 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dashboard</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<!-- CSS only -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
-<body>
-	<input type="checkbox" id="checkbox">
-	<header class="header">
-		<div> <img src="Images/img3.webp" alt="logo" class="u-name" style="width: 50%;"> </div>
-			<label for="checkbox">
-				
-			</label>
-		</h2>
-		<img src="Images/GBR_2x.png" alt="">
-		<img src="Images/FRA_2x.png" alt="">
-	</header>
-	<HR WIDTH="100%" style="overflow: hidden;">
-	<div class="body">
-		<!-- navbar lateral -->
-		<nav class="side-bar">
-			<ul>
-				<li>
-					<a href="#accueill">
-						<i class="fa fa-home" aria-hidden="true"></i>
-						<span>Accueil</span>
+
+<!--================== début de la navbar ===================-->
+<header>
+	<nav class="navbar navbar-expand-lg navbar-grège bg-grège">
+		<div class="container-fluid">
+			<a class="navbar-brand d-lg-none" href="#">
+				<img src="Images/img3.webp" alt="le logo" width="100px">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+				data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+				aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto">
+					<li class="nav-item">
+						<a class="nav-link " href="#">Accueil</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Nos Programmes</a>
+					</li>
+					<a class="navbar-brand d-none d-lg-block" href="#">
+						<img src="Images/img3.webp" alt="le logo" width="150px">
 					</a>
-				</li>
-				<li>
-					<a href="">
-						<i class="fa fa-sun-o" aria-hidden="true"></i>
-						<span>Nos programmes</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-dashboard" aria-hidden="true"></i>
-						<span>Energy Space</span>
-					</a>
-				</li>
-				<li>
-					<a href="#">
-						<i class="fa fa-comment-o" aria-hidden="true"></i>
-						<span>Blog</span>
-					</a>
-				</li>
-			</ul>
-		</nav>
-		<!-- fin navbar lateral -->
-		<div id="accueill"></div>
-		<section class="section-1">
-			<img class="tof2" src="img/tof2.png.webp" alt="photo" >
-			<img class="logo" src="img/logo.png" alt="logo" ><p class="log">Une génération en action</p>
-		    <p class="definition">Energy Generation est <em style="color:red ;">une organisation panafricaine</em> qui encourage les jeunes Africains à relever les défis
-				 les plus pressants de leur génération (énergie, agriculture, santé, etc.) à travers <em style="color:red ;">l'entrepreneuriat et la technologie.</em><br/><br/>
-				Energy Generation vise à soutenir et à promouvoir les innovations technologiques et entrepreneuriales afin d'identifier, de développer et de diffuser largement les solutions pratiques<em style="color:red ;"> « made in Africa »</em>.<br/><br/>
-				Mais avant tout, Energy Generation est une <em style="color:red ;">plate-forme centrée sur l'humain </em>qui offre aux individus des possibilités de libérer et d’exprimer toute leur créativité.
+					<li class="nav-item ">
+						<a class="nav-link " href="#">
+							Energy Space
+						</a>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Blog</a>
+					</li>
+				</ul>
+
+			</div>
+		</div>
+	</nav>
+	<div class="drapeau">
+		<img src="Images/FRA_2x.png" alt="choix de la page en français">
+		<img src="Images/GBR_2x.png" alt="choix de la langue en anglais">
+	</div>
+</header>
+<!-- fin navbar lateral -->
+<div id="accueill"></div>
+<section class="section-1">
+	<img class="tof2" src="img/tof2.png.webp" alt="photo">
+	<img class="logo" src="img/logo.png" alt="logo">
+	<p class="log">Une génération en action</p>
+	<p class="definition">Energy Generation est <em style="color:red ;">une organisation panafricaine</em> qui encourage
+		les jeunes Africains à relever les défis
+		les plus pressants de leur génération (énergie, agriculture, santé, etc.) à travers <em
+			style="color:red ;">l'entrepreneuriat et la technologie.</em><br /><br />
+		Energy Generation vise à soutenir et à promouvoir les innovations technologiques et entrepreneuriales afin
+		d'identifier, de développer et de diffuser largement les solutions pratiques<em style="color:red ;"> « made in
+			Africa »</em>.<br /><br />
+		Mais avant tout, Energy Generation est une <em style="color:red ;">plate-forme centrée sur l'humain </em>qui
+		offre aux individus des possibilités de libérer et d’exprimer toute leur créativité.
+	</p>
+	<div class="s1">
+		<div class="tof3">
+			<div class="tof"><img src="img/tof3.png.webp" alt="photo"></div>
+			<div class="description">
+				<p><em style="color:#232D84 ;">VISION</em> <br /><br /><br />Permettre l'émergence d'une nouvelle
+					génération africaine en mesure de relever le défi de la dignité humaine sur le continent africain et
+					au-delà.</p>
+			</div>
+		</div>
+
+		<div class="tof4"><img class="tof" src="img/tof4.png.webp" alt="photo">
+			<p class="description"><em style="color:#232D84 ;">MISSION</em><br /><br /><br />Révolutionner l'accès à
+				l'éducation, à l'accompagnement et au financement, en construisant un écosystème entrepreneurial solide
+				où les jeunes africains peuvent prospérer et développer des entreprises hors du commun.</p>
+		</div>
+		<button>A propos</button>
+	</div>
+	<div class="s2">
+		<div class="programme">
+			<p>NOS PROGRAMMES</p>
+		</div>
+		<img class="tof5" src="img/tof5.png" alt="photo">
+		<div class="labusiness">
+			<div class="descrip" style="font-size: 20px;">
+				<div class="descrip2"> Au sein de nos Business Schools, <em style="color:red ;">théorie et pratique se
+						rencontrent</em> pour transformer des idées novatrices en entreprises viables.</div>
+				En tant qu'étudiant porteur de projet, vous suivrez une <em style="color:red ;">formation diplômante en
+					entrepreneuriat</em> et aurez l’occasion de bénéficier de l’expérience
+				pratique des professionnels issus d'entreprises leader mondiales de leur secteur.<div class="descrip3">
+					Au sein de nos écoles, les porteurs de projet bénéficient des
+					installations du laboratoire pour <em style="color:red ;"></em>développer leur prototype, ainsi que
+					d’un <em style="color:red ;">accompagnement personnalisé</em> pour structurerleur projet
+					entrepreneurial.</div>
+			</div>
+			<div class="business">
+				<div class="energy">la Business & Energy School</div><br />
+				<div class="healt">la Business & Healthcare School</div><br />
+				<div class="agri">La Business & Agri School</div>
+
+			</div>
+		</div>
+		<img class="tof8" src="img/tof8.png" alt="photo">
+	</div>
+	<div class="s3">
+		<diV class="formation">
+			<p>LA FORMATION ENTREPRENEURIAT SOLAIRE</p>
+		</diV>
+
+		<div class="entrepreneuriat">
+			<img src="img/tof10.png" alt="photo">
+			<p>Parce que le solaire représente <em style="color:red ;">une véritable opportunité de création d'emplois
+					pour les jeunes</em> tout en participant au développement socio-économique des zones rurales
+				africaines notamment, Energy Generation a créé un programme
+				de dix mois pour former puis accompagner des entrepreneurs du solaire.<br /><br /><br />Quel que soit
+				votre niveau d'études actuel, la Formation Entrepreneuriat Solaire vous propose un <em
+					style="color:red ;">programme sur mesure</em> pour vous garantir une formation
+				répondant parfaitement à vos besoins et à vos projets d'avenir.
 			</p>
-			<div class="s1">
-				<div class="tof3">
-					<div class="tof"><img  src="img/tof3.png.webp" alt="photo" ></div>
-					<div class="description"><p><em style="color:#232D84 ;">VISION</em> <br/><br/><br/>Permettre l'émergence d'une nouvelle génération africaine en mesure de relever le défi de la dignité humaine sur le continent africain et au-delà.</p></div>
-				</div>
+		</div>
+		<button>La formation solaire</button>
+	</div>
+	<div class="s4">
+		<div class="ENS">
+			<p>L ENERGY SPACE<br />-incubateur & SEED FUND
+		</div>
+		</p>
+		<div class="incubator">
+			<img src="img/tof6.png" alt="photo">
+			<p>L’Energy Generation Incubator et le Co-working Space accueillent
+				<em style="color:red ;">des start-ups prometteuses</em> dans le domaine de l'énergie, mais pas
+				seulement.<br /><br /><br />
+				Les services d'incubation incluent un coaching personnalisé, avec formation et mentorat, ainsi qu’un <em
+					style="color:red ;">soutien dans les activités quotidiennes et les défis
+					rencontrés</em>.<br /><br /><br />
+				Afin de soutenir <em style="color:red ;">le développement d'un écosystème entrepreneurial
+					international</em>,
+				l'incubateur accueillera des projets issus de l’Academy, mais aussi plusieurs projets de milieux et de
+				pays africains différents.
+			</p>
 
-                <div class="tof4"><img class="tof" src="img/tof4.png.webp" alt="photo" >
-				<p class="description"><em style="color:#232D84 ;">MISSION</em><br/><br/><br/>Révolutionner l'accès à l'éducation, à l'accompagnement et au financement, en construisant un écosystème entrepreneurial solide où les jeunes africains peuvent prospérer et développer des entreprises hors du commun.</p></div>
-				<button>A propos</button>
-			</div>
-			<div class="s2">
-				<div class="programme"><p>NOS PROGRAMMES</p></div>
-				<img class="tof5" src="img/tof5.png" alt="photo" >
-				<div class="labusiness">
-				    <div class="descrip" style="font-size: 20px;">
-					    <div class="descrip2" > Au sein de nos Business Schools, <em style="color:red ;">théorie et pratique se rencontrent</em> pour transformer des idées novatrices en entreprises viables.</div>
-                         En tant qu'étudiant porteur de projet, vous suivrez une <em style="color:red ;">formation diplômante en entrepreneuriat</em> et aurez l’occasion de bénéficier de l’expérience
-				         pratique des professionnels issus d'entreprises leader mondiales de leur secteur.<div class="descrip3">Au sein de nos écoles, les porteurs de projet bénéficient des
-				         installations du laboratoire pour <em style="color:red ;"></em>développer leur prototype, ainsi que d’un <em style="color:red ;">accompagnement personnalisé</em> pour structurerleur projet entrepreneurial.</div>
-				    </div> 
-				    <div class="business">
-					 <div class="energy">la Business & Energy School</div><br/><div class="healt">la Business & Healthcare School</div><br/><div class="agri">La Business & Agri School</div>
-			
-				    </div>
-			   </div>
-               <img class="tof8" src="img/tof8.png" alt="photo" >
-			</div>
-			<div class="s3">
-				     <diV class="formation"><p>LA FORMATION ENTREPRENEURIAT SOLAIRE</p></diV>
-				    
-				 <div class="entrepreneuriat">
-					  <img src="img/tof10.png" alt="photo" >
-				      <p>Parce que le solaire représente <em style="color:red ;">une véritable opportunité de création d'emplois pour les jeunes</em> tout en participant au développement socio-économique des zones rurales africaines notamment, Energy Generation a créé un programme
-				         de dix mois pour former puis accompagner des entrepreneurs du solaire.<br/><br/><br/>Quel que soit votre niveau d'études actuel, la Formation Entrepreneuriat Solaire vous propose un <em style="color:red ;">programme sur mesure</em> pour vous garantir une formation
-				         répondant parfaitement à vos besoins et à vos projets d'avenir.
-                        </p>
-				        <!-- <img src="img/tof8.png" alt="photo" > -->
-			     </div>
-				    <button>La formation solaire</button> 
-			</div>
-			<div class="s4">
-				<div class="ENS"><p>L ENERGY SPACE<br/>-incubateur & SEED FUND</div></p>
-				<div class="incubator">
-					<img src="img/tof6.png" alt="photo" >
-					<p>L’Energy Generation Incubator et le Co-working Space accueillent
-					<em style="color:red ;">des start-ups prometteuses</em> dans le domaine de l'énergie, mais pas seulement.<br/><br/><br/>
-					Les services d'incubation incluent un coaching personnalisé, avec formation et mentorat, ainsi qu’un <em style="color:red ;">soutien dans les activités quotidiennes et les défis rencontrés</em>.<br/><br/><br/>
-					Afin de soutenir <em style="color:red ;">le développement d'un écosystème entrepreneurial international</em>,
-					l'incubateur accueillera des projets issus de l’Academy, mais aussi plusieurs projets de milieux et de pays africains différents.</p>
-
-				</div>
-				<button>L Energy Space</button>
-			</div>
-			<div class="s5">
-                <P>ils croient en nous</P>
-				
-				<div class="s6">
-					<img src="img/logo1.webp" alt="photo" >
-					<img src="img/logo2.webp" alt="photo" >
-					<img src="img/logo3.webp" alt="photo" >
-					<img src="img/logo4.webp" alt="photo" >
-					<img src="img/logo5.webp" alt="photo" >
-					<img src="img/logo6.webp" alt="photo" >
-					<img src="img/logo7.webp" alt="photo" >
-					<img src="img/logo8.webp" alt="photo" >
-					<img src="img/logo9.webp" alt="photo" >
-					<img src="img/logo10.webp" alt="photo" >
-					<img src="img/logo11.webp" alt="photo" >
-					<img src="img/logo12.webp" alt="photo" >
-					<img src="img/logo13.webp" alt="photo" >
-					<img src="img/logo14.webp" alt="photo" >
-					<img src="img/logo15.webp" alt="photo" >
-					<img src="img/logo16.webp" alt="photo" >
-					<img src="img/logo17.webp" alt="photo" >
-					<img src="img/logo18.webp" alt="photo" >
-					<img src="img/logo19.webp" alt="photo" >
-					<img src="img/logo20.webp" alt="photo" >
-					<img src="img/logo21.webp" alt="photo" >
-				</div>
-				
-				<div class="edf">
-					<img src="img/tof9.png" alt="photo" >
-			    </div>
-		    </div>
-			
-			<div class="s7">
-				<P>ils parlent de nous</P>
-                <div class="box"> 
-					<div><img src="img/communic1.jpg.webp" alt="photo" width="100px"></div>
-					<div><img src="img/communic2.webp" alt="photo" width="100px"></div>
-					<div><img src="img/communic3.webp" alt="photo" width="100px"></div>
-					<div><img src="img/communic4.webp" alt="photo" width="100px"></div>
-					<div><img src="img/communic5.webp" alt="photo" width="100px"></div>
-					<div><img src="img/communic6.webp" alt="photo" width="100px"></div>
-					<div><img src="img/communic7.webp" alt="photo" width="100px"></div>
-					<div><img src="img/communic8.webp" alt="photo" width="100px"></div>
-					<div><img src="img/communic10.webp" alt="photo" width="100px"></div>
-						
-				</div>
-
-			</div>
-			<div >
-				<form class="footer" action="form.php" method="post">
-					<div class="TITRE" >NEWSLETTER</div>
-					<div class="form">
-					 Get our latest info, podcasts, advices...<br/><br/><br/>
-					 First Name<br>
-                     <input type="text" id="nom" name="nom" required><br/><br/>
-					 Email<br/>
-					 <input type="text" id="email" name="email" required>
-					</div>
-					<div class="checkbox">  
-					    <select id="langue" name="langue">
-							<option value="1">je préfère recevoir les informations en français </option>
-							<option value="2">I wish to receive the content in English</option>
-						</select>
-				    </div>
-				 <button>subscribe</button>
-				</form>
-			</div>
-			<div class="contact">
-				<div><img src="img/contact.webp" alt="contact" width="100px" style="margin:30px ;"></div>
-				<div><img src="img/contact1.webp" alt="contact" width="100px" style="margin:30px ;"></div>
-				<div><img src="img/contact2.webp" alt="contact" width="100px" style="margin:30px ;"></div>
-				<div><img src="img/contact3.webp" alt="contact" width="100px" style="margin:30px ;"></div>
-			</div>
-			<div class="copyright">
-				© 2020 - Energy Generation - All rights reserved.
-			</div>
-			
-		</section>
-		
-
-		
+		</div>
+		<button>L Energy Space</button>
 	</div>
 
+	
+	<!-- ======================================= debut du footer avec les section ==============================-->
+
+	<footer class="footer">
+
+		<!--===================================== debut de la section ils croient en nous =======================-->
+
+		<section class="partenaires1">
+			<div class="s6">
+				<h1>ILS CROIENT EN NOUS</h1>
+			</div>
+			<div class="container my-3">
+				<div class="row ">
+
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo1.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo2.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo3.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo4.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo5.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo6.webp" alt="photo"></a>
+					</div>
+
+				</div>
+				<div class="row my-5">
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo7.webp" alt="photo"></a></div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo8.webp" alt="photo">></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo9.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo10.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo11.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo12.webp" alt="photo"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo13.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo14.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo15.webp" alt="photo"></a></div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo16.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo17.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo18.webp" alt="photo"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo19.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo20.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo21.webp" alt="photo"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--========================================= fin de la section ils croient en nous ===================================-->
+
+		<!--========================================= debut de la section ils parlent de nous ==================================-->
+
+		<section class="s7">
+			<div>
+				<div class="journaux">
+					<h1>ILS PARLENT DE NOUS</h1>
+				</div>
+
+				<div class="container ">
+					<div class="row my-5" id="box">
+
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic1.jpg.webp" alt="photo"></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic2.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic3.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic4.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic5.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic6.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic7.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic8.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic9.webp" alt="photo"></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic10.webp" alt="photo"></a></div></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--=================================================== fin de la section ils parlent de nous  ================================-->
+
+		<!--=================================================== debut de la section newsletter ==============================================-->
+
+		<section class="newsletter">
+			<h1 class="news">NEWSLETTER</h1>
+			<form class="option">
+				<div class="form">
+					Get our latest info, podcasts, advices...<br /><br /><br />
+					First Name<br>
+					<input type="nom"><br /><br />
+					Email<br />
+					<input type="mail"><br />
+				</div>
+				<div class="checkbox">
+					<select>
+						<option type="checkbox">Je prefere recevoir les information en francais<br /><br />
+						<option type="checkbox">I wish to receive the content in English<br />
+					</select>
+					<div><button>subscribe</button></div>
+				</div>
+			</form>
+		</section>
+
+		<!--=================================================== fin de la section newsletter ============================================-->
+
+		<!--==================================================== debut de la section coppyright et lien =========================================-->
+
+
+
+		<section class="lien">
+			<div class="reseaux">
+				<a href="#">
+					<i class="fa-brands fa-facebook-square"></i>
+				</a>
+
+				<a href="#">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+
+				<a href="#">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+
+				<a href="#">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+			</div>
+
+			<div class="lg_foot">
+				<img src="Images/img3.webp" alt="">
+
+			</div>
+			<div>
+				<p class="copy">
+					<i class="fa-regular fa-copyright"></i>2020 - Energy Generation - All rights reserved.
+				</p>
+				<p class="arrow"><a href="#"><i class="fa-solid fa-up-from-line"></i></a></p>
+			</div>
+		</section>
+	</footer>
+
+	<!--===================================================== fin de la section footer ==================================================-->
+
+</section>
+<!-- javascrip lien bootstrap -->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
+
+
+
 </body>
+
 </html>
