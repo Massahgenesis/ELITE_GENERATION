@@ -5,7 +5,7 @@
 	font-family: arial, sans-serif;
 }
 
-	/************** stylisation de la navbar **********/
+	/************************************** stylisation de la navbar *******************************************/
 
 .nabar-brand img{
 	width: 100px;
@@ -53,10 +53,8 @@ div .img{
 	width: 70px;
 	margin: 0 5px;
 }
-
-	                    /*************** fin de la navba ***********/
-
-	                    /******* traitement du hr *******/
+       /************************************* fin de la navba ***************************************/
+         /******* ************************** traitement du hr *******************************************/
 
 .break-first{
 
@@ -69,25 +67,13 @@ div .img{
 	margin:10px auto;
 }
 
-                         /******* fin du traitement du hr ******/
+          /******************************************* fin du traitement du hr ****************************/
 
-			/*********** traitement des images de la premiere section ******/ 
+		/********************************** traitement des images de la premiere section ************************/ 
 
-.roww{
-
-	margin-left: 110px;
-	margin-right: px;
-	display: flex;
-}
-
-.roww .objet{
-
-	background-color: #FEAE4A;
-	width: 700px;
-}
 
  .energy{
-	font-size: 40px;
+	font-size: 70px;
 	font-weight: bold;
 	background-color:#c7b79c96;
 	margin-bottom: 20px;
@@ -98,13 +84,8 @@ div .img{
 	
 }
 
-.section-1 .deux{
 
-	width: 400px;
-	background-color: #FEAE4A;
-}
-
-	/********* traitment de la section portfolio **********/
+	/************************************ traitment de la section portfolio ********************************/
 
 .section-portfolio{
 
@@ -113,15 +94,22 @@ div .img{
 	padding-top: 20px;
 	padding-bottom: 100px;
 }
+
+.section-1{
+	margin:0 5%;
+	background-color: #0F056B;
+}
+
 .section-portfolio h1{
 	text-align: center;
 	color:red;
-	font-size: 50px;
+	font-size: 60px;
+	font-weight: bold;
 }
 
-                           /********** fin de section portfolio ********/
+     /************************************ fin de section portfolio *******************************/
 
-                              /********** traitement du footer *********/
+     /*************************************** traitement du footer *******************************/
 
 .footer{
 
@@ -131,6 +119,12 @@ div .img{
 
 /************************* debut de traitement de la section .partenaires1 **********************/
 
+
+ section .partenaires1{
+
+	margin:0 5%;
+}
+
 .partenaires1 .believe{
 
 	text-align: center;
@@ -138,6 +132,8 @@ div .img{
 	background-color:#c7b79c96 ;
 	font-size: 40px;
 	color: #232D84;
+	font-weight: bold;
+	margin-top: 1%;
 
 
 }
@@ -152,6 +148,7 @@ div .img{
 	color: #232D84;
 	font-size: 40px;
 	padding: 5px;
+	font-weight: bold;
 }
 
 .medias .container{
@@ -173,13 +170,43 @@ div .img{
 	padding: 10px;
 }
 
+.form{
+	margin-left: 40%;
+}
+.form input{
+	width: 400px;
+	height: 50px;
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	background-color: #c7b79c64;
+	
+}
+.form input:focus{
+	
+	background-color: white;
+	color: #232D84;
+}
+.checkbox{
+	margin-left: 40%;
+	margin-top: 20px;
+	display: flex;
+	margin-bottom: 20px;
+	
+}
+.checkbox input{
+	padding: 10px;
+}
+.checkbox button{
+	text-align: center;	
+	margin-left: 20px;
+	margin-right: 150px;
+	background: #26E6F2;
+	padding: 10px;
+	border: none;
+	
 
-
-
-
-
-
-
+}
 
 /********************************* debut dr traitement de la section lien ************************/
 
@@ -231,50 +258,15 @@ div .img{
 	width: 55px;
 	position: fixed;
 	color: white;
-	bottom: 40px;
-	right: 65px;
+	bottom: 55px;
+	right: 50px;
+	font-size: 30px;
 }
 
 
 
 
-.form{
-	margin-left: 40%;
-}
-.form input{
-	width: 400px;
-	height: 50px;
-	border-top: none;
-	border-right: none;
-	border-left: none;
-	background-color: #c7b79c64;
-	
-}
-.form input:focus{
-	
-	background-color: white;
-	color: #232D84;
-}
-.checkbox{
-	margin-left: 40%;
-	margin-top: 20px;
-	display: flex;
-	margin-bottom: 20px;
-	
-}
-.checkbox input{
-	padding: 10px;
-}
-.checkbox button{
-	text-align: center;	
-	margin-left: 20px;
-	margin-right: 150px;
-	background: #26E6F2;
-	padding: 10px;
-	border: none;
-	
 
-}
 
 
 
@@ -330,10 +322,167 @@ div .img{
 } */
 /* fin animation */
 
-@media screen and(min-width:900px) {
 
+/************************************* les medias queries *********************************/
+
+@media (max-width:600px){
+
+
+	.drapeau img{
+		width: 50px;
+		margin: 0 5px;
+	}
+	
+
+	.nabar-brand img{
+		width: 200px;
+	}
+
+
+    .navbar .navbar-nav .nav-link{
+	color:black;
+	font-size: 20px;
+	padding: 3 15px;
+	
+    }
+
+	.energy{
+		font-size: 20px;
+		margin-bottom: 10px;
+		padding: 10px;
+		
+		
+	}
+
+	.partenaires1 .believe{
+
+		padding: 10px;
+		font-size: 20px;
+		background-color:#c7b79c96 ;
+	
+	
+	}
+	
+
+	
+	.break-first{
+
+		background-color: #232D84;
+		color: #232D84;
+		width: 300px;
+		height: 5px;
+		justify-content: center;
+		border: none;
+		margin:10px auto;
+	}
+	.roww{
+		
+		width: 70%;
+		
+		
+	}
+
+	.centre{
+		width: 40%;
+		background-color: blue;
+		
+	}
+
+	.centre img{
+		width: 100px;
+			
+	}
+	.objet img{
+			width: 40px;
+				
+	}	
+	.form{
+				margin-left: 5%;
+	}
+	.checkbox{
+				margin-left: 5%;
+				margin-top: 20px;
+				flex-direction: column;		
+				
+	 }
+
+	.form input{
+				width: 300px;
+				height: 50px;
+				
+	}
+	.checkbox button{
+			
+			margin-top: 5px;
+			margin-left: 120px;
+			padding: 5px;
+			
+			
+		
+	}
+
+	.reseaux a i{
+
+			font-size: 40px;
+			padding: 20px;
+	}
+
+	.copy{
+
+			font-size: 10px;
+			
+	}
+	.lg_foot img{
+
+			width: 150px;
+	}
+
+	.arrow{
+
+			width: 35px;
+			height: 35px;
+			right: 30px;
+			
+			
+	}	
+
+		.arrow i{
+		width: 35px;
+			bottom: 50px;
+			right: 30px;
+			font-size: 20px;
+	}
+		
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:900px) {
+	
 	.nabar-brand img{
 		width: 100px;
 	}
-	
+
 }
