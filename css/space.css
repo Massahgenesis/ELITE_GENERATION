@@ -1,190 +1,30 @@
-@media (min-width:1200px) {
-	.tof2 {
-		width: 100%;
-		margin-top: 20px;
-	}
-	.definition{
-       max-width: 50%;
-	   margin: 25%;
-	}
-	.tof{
-		max-width: 50%;
-		margin-left: 20%;
-	}
-	.entrepreneuriat img{
-		max-width: 40%;
-		margin-left: 100px;
-	}
-	.entrepreneuriat p{
-		max-width: 50%;
-	 }
-	 .incubator img{
-		max-width: 40%;
-		margin-left: 100px;
-	}
-	.incubator p{
-		max-width: 50%;
-		margin-top: 30px;
-		 }
-	.edf img{
-		margin-left: 27%;
-	}
-
-
-
-}
-
-
-
-
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 	font-family: arial, sans-serif;
 }
-/* navbar lateral */
-.header {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 15px 30px;
-	background: white;
-	color: black;
-	position: static;
-}
-.u-name {
-	font-size: 20px;
-	padding-left: 2px;
-	margin-left: 50px;
-}
-.u-name b {
-	color: #127b8e;
-}
-.header i {
-	font-size: 30px;
-	cursor: pointer;
-	color:black;
-}
-.header i:hover {
-	color: #127b8e;
-}
-.user-p {
-	text-align: center;
-	padding-left: 10px;
-	padding-top: 25px;
-}
-.user-p img {
+
+	/************** stylisation de la navbar **********/
+
+.nabar-brand img{
 	width: 100px;
-	border-radius: 50%;
-}
-.user-p h4 {
-	color: #ccc;
-	padding: 5px 0;
-
-}
-.side-bar {
-	width: 200px;
-	background:#fead4aa3;
-	min-height: 100px;
-	transition: 550ms ;
-	position: fixed;
-	z-index: 100;
-	border-radius: 100px;
-	margin-top: 100px;
-	padding: 20px;
-}
-.body {
-	display: flex;
-	position: static;
-}
-
-.section-1 {
-	max-width: 100%;
-}
-
-
-.section-1 h1 {
-	color:black;
-	font-size: 60px;
-	font-family: arial, sans-serif;
-}
-.section-1 p {
-	color: black;
-	font-size: 20px;
-	background: #fff;
-	padding: 7px;
-	border-radius: 5px;
-	font-family: arial, sans-serif;
-	
-}
-.side-bar ul {
-	margin-top: 40px;
-	list-style: none;
-}
-.side-bar ul li {
-	font-size: 16px;
-	padding: 30px 0px;
-	padding-left: 20px;
-	transition: 500ms ;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-}
-.side-bar ul li:hover {
-	background: #127b8e;
-	color: white;
-}
-.side-bar ul li a {
-	text-decoration: none;
-	color: black;
-	cursor: pointer;
-	letter-spacing: 1px;
-}
-.side-bar ul li a i {
-	display: inline-block;
-	padding-right: 10px;
-	font-size: 23px;
-}
-#navbtn {
-	display: inline-block;
-	margin-left: 70px;
-	font-size: 20px;
-	transition: 500ms color;
-}
-#checkbox {
-	display: none;
-}
-#checkbox:checked ~ .body .side-bar {
-	width: 60px;
-}
-#checkbox:checked ~ .body .side-bar .user-p{
-	visibility: hidden;
-}
-#checkbox:checked ~ .body .side-bar a span{
-	display: none;
-}
-/* fin navbar lateral */
-
-/* premier navbar */
-#aligner{
-	display: flex;
-}
- .nabar-brand img{
-	width: 80px;
 	margin: 15PX;
 }
 .navbar-brand {
 	margin-left: 15px;
 	padding: 0 20;
+	                                                                                                                                    
 }
 .navbar-nav {
 	align-items: center;
+	
 }
 .navbar .navbar-nav .nav-link{
 	color:black;
-	font-size: 20px;
+	font-size: 30px;
 	padding: 5 20;
+	
 }
 
 ul li a:hover{
@@ -195,247 +35,209 @@ ul li a:hover{
 	transition: 1s;
 }
 .navbar  {
-	background-color: white;
+	background-color: #c7b79c96;
+	
+}
+div .img{
+	align-items: center;
 }
 
-/* fin premier navbar */
+.drapeau{
 
-/* page accueill */
-.tof2 {
-	content: "";
-    margin-top: 20px;
-}
-.logo{
-	width: 20%;
-	margin-left: 50%;
-	margin-top: 30px;
-}
-.log{
-margin-left: 60%;
-
-}
-.definition{
-	width: 100%;
+	margin-top: 20px;
+	margin-bottom: 20px;
 	text-align: center;
-	margin-top: 50px;
-	margin-bottom: 50px;
+	width: 90%;
+}
+.drapeau img{
+	width: 70px;
+	margin: 0 5px;
 }
 
-.tof3{
-	max-width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	margin: 100px;
-	
-	
-}
-.tof4{
-	max-width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	margin: 100px;
-	
-	
-}
-.tof{
-	max-width: 50%;
-}
-.description{
-	max-width: 50%;
-	margin-left: 10px;
-}
-.s1 button{
-	width: 150px;
-	margin-left: 50%;
-	margin-right: 20%;
-	margin-top: 50px;
-	padding: 10px;
-	background-color: #E40C14;
-	color: white;
-	
-}
+	                    /*************** fin de la navba ***********/
 
-.programme p{
-   text-align: center;	
-   width: 90%;
+	                    /******* traitement du hr *******/
+
+.break-first{
+
 	background-color: #232D84;
-	height: 100px;
-	margin: 100px;
-	color: #fff;
+	color: #232D84;
+	width: 700px;
+	height: 5px;
+	justify-content: center;
+	border: none;
+	margin:10px auto;
 }
-.tof5{
-	width: 100%;
-}
-.tof8{
-	width: 100%;
-}
-.labusiness{
-	max-width: 100%;
-	height: 30%;
+
+                         /******* fin du traitement du hr ******/
+
+			/*********** traitement des images de la premiere section ******/ 
+
+.roww{
+
+	margin-left: 110px;
+	margin-right: px;
 	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	position: absolute;
-	z-index: 3;
-	margin-top: 15%;
-	
-
-	
-}
-.descrip {
-	max-width: 50%;
-	height: 200px;
-	background-color: rgba(255, 255, 255, 0.302);
-}
-.descrip3{
-	margin-top: 40px;
-}
-.descrip2{
-	margin-bottom: 40px;
-}
-.business {
-	max-width: 50%;
-	height: 30%;
-	background-color: rgba(255, 255, 255, 0);}
-.s2{
-	position: relative;
-	z-index: 2;
-}
-.energy{
-	background-color: #EA551C;
-	height: 50px;
-    width: 300px;
-
-
-
-
-}
-.healt{
-background-color: #03A1E4;
-height: 50px;
-width: 300px;
-margin-top: 30px;
-
-
-}
-.agri{
-background-color: #FBB02D;
-height: 50px;
-width: 300px;
-margin-top: 30px;
-
-
-}
-.formation p{
-	text-align: center;	
-	width: 90%;
-	 background-color: #232D84;
-	 height: 100px;
-	 margin: 100px;
-	 color: #fff;
- }
- .entrepreneuriat{
-	max-width: 100%;
-	display: flex;
-	flex-wrap: wrap;
-	
- }
- .entrepreneuriat p{
-    width: 100%;
-   margin-top: 30px;
- }
- .entrepreneuriat img{
-	width: 100%;
- }
-
- .s3 button{
-	width: 150px;
-	margin-left: 50%;
-	margin-right: 20%;
-	margin-top: 50px;
-	padding: 10px;
-	background-color: #E40C14;
-	color: white;
-	
-
 }
 
-.ENS p{
-	text-align: center;	
-	width: 90%;
-	 background-color: #232D84;
-	 height: 100px;
-	 margin: 100px;
-	 color: #fff;
- }
-.incubator{
-	display: flex;
-	flex-wrap: wrap;
-}
-.incubator p{
-	width: 100%;
-	margin-top: 30px;
-	 }
-.incubator img{
-		width: 100%;
-}
-.s4 button{
-	width: 150px;
-	margin-left: 50%;
-	margin-right: 20%;
-	margin-top: 50px;
-	padding: 10px;
-	background-color: #E40C14;
-	color: white;
-}
-.s5 p{
-	text-align: center;	
-	width: 90%;
-	background-color: #232D84;
-	height: 100px;
-	margin: 100px;
-	color: #fff;
-}
-.s5{
-	position: relative;
-	z-index: 2;
-}
-.s6{
-	position: absolute;
-	z-index: 4;
-	background-color: #26e4f262;
-	margin-top: 10%;
+.roww .objet{
+
+	background-color: #FEAE4A;
+	width: 700px;
 }
 
-.edf img{
-	width: 980px;
-}
-.s7 p {
-	text-align: center;	
-	width: 90%;
-	background-color: #232D84;
-	height: 100px;
-	margin: 100px;
-	color: #fff;
-}
-.box{
-	display: flex;
-	justify-content: space-around;
-	margin-top: 100px;
-}
-.TITRE{
-	text-align: center;	
-	width: 90%;
-	margin: 100px;
-	color: #E40C14;
+ .energy{
 	font-size: 40px;
-}
-.footer{
-	width: 100%;
-	height: 600px;
-	background-color: #c7b79c65;
+	font-weight: bold;
+	background-color:#c7b79c96;
+	margin-bottom: 20px;
+	text-align: center;
+	padding: 30px;
+	color: #232D84;
+	
 	
 }
+
+.section-1 .deux{
+
+	width: 400px;
+	background-color: #FEAE4A;
+}
+
+	/********* traitment de la section portfolio **********/
+
+.section-portfolio{
+
+	background-color: #FEAE4A;
+	margin:0 5%;
+	padding-top: 20px;
+	padding-bottom: 100px;
+}
+.section-portfolio h1{
+	text-align: center;
+	color:red;
+	font-size: 50px;
+}
+
+                           /********** fin de section portfolio ********/
+
+                              /********** traitement du footer *********/
+
+.footer{
+
+	background-color: antiquewhite;
+
+}
+
+/************************* debut de traitement de la section .partenaires1 **********************/
+
+.partenaires1 .believe{
+
+	text-align: center;
+	padding: 30px;
+	background-color:#c7b79c96 ;
+	font-size: 40px;
+	color: #232D84;
+
+
+}
+
+/******************************* debut de traitement de la section medias *************************/
+
+
+.journaux{
+
+	text-align: center;
+	background-color:#c7b79c96;
+	color: #232D84;
+	font-size: 40px;
+	padding: 5px;
+}
+
+.medias .container{
+
+	background-color: white;
+	padding: 30px;
+
+}
+
+
+/******************************* debut de traitement de la section newsletter ******************/
+
+
+.newsletter .news{
+
+	text-align: center;
+	color: #232D84;
+	background-color: #c7b79c96;
+	padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+/********************************* debut dr traitement de la section lien ************************/
+
+.lien{
+
+	background-color:#c7b79c96 ;
+	padding: 10px;
+	text-align: center;
+}
+.reseaux a i{
+
+	font-size: 70px;
+	color: #232D84;
+	padding: 30px;
+}
+.reseaux a i:hover{
+
+	font-size: 75px;
+	color: #019FE3;
+	transition: 0.25s;
+	
+}
+.reseaux{
+	margin-left: 50%;
+    margin-right: 50%;
+	display: flex;
+	justify-content: space-evenly;
+}
+.lg_foot{
+
+	margin-bottom: 30px;
+}
+.copy{
+
+	font-size: 25px;
+	color: #232D84;
+}
+.arrow{
+
+	width: 55px;
+	height: 55px;
+	position: fixed;
+	background-color: #232D84;
+	bottom: 25px;
+	right: 50px;
+	border-radius: 50%;
+}
+.arrow i{
+	width: 55px;
+	position: fixed;
+	color: white;
+	bottom: 40px;
+	right: 65px;
+}
+
+
+
+
 .form{
 	margin-left: 40%;
 }
@@ -448,45 +250,35 @@ margin-top: 30px;
 	background-color: #c7b79c64;
 	
 }
+.form input:focus{
+	
+	background-color: white;
+	color: #232D84;
+}
 .checkbox{
 	margin-left: 40%;
 	margin-top: 20px;
+	display: flex;
+	margin-bottom: 20px;
+	
 }
 .checkbox input{
 	padding: 10px;
 }
 .checkbox button{
 	text-align: center;	
-	margin-left: 100px;
-	margin-right: 100px;
-	margin-top: 50px;
+	margin-left: 20px;
+	margin-right: 150px;
 	background: #26E6F2;
 	padding: 10px;
-
-}
-.contact{
-	width: 100%;
-	height: 200px;
-	background-color: rgba(255, 255, 255, 0);
+	border: none;
 	
+
 }
-.copyright{
-	width: 100%;
-	height: 50px;
-	background-color: #c7b79c1e;
-	
-}
-/* fin page accueill */
 
 
 
-
-
-
-
-
-
-/* animation */
+/* animation
 .box div{
     width: 60px;
     height: 60px;
@@ -535,5 +327,13 @@ margin-top: 30px;
         transform: scale(1.3) translateY(-90px) rotate(0);
         opacity: 1;
 }
-}
+} */
 /* fin animation */
+
+@media screen and(min-width:900px) {
+
+	.nabar-brand img{
+		width: 100px;
+	}
+	
+}

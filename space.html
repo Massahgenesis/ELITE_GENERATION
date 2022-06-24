@@ -1,254 +1,392 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dashboard</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/space.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
 		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
 		crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<!-- CSS only -->
+
+	<!--============================================= CSS only ==================================================-->
+
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 
-	<!--================== début de la navbar ===================-->
-<header>
-	<nav class="navbar navbar-expand-lg navbar-grège bg-grège">
-		<div class="container-fluid">
-			<a class="navbar-brand d-lg-none" href="#">
-				<img src="Images/img3.webp" alt="le logo" width="100px">
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-				aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarSupportedContent">
-				<ul class="navbar-nav mx-auto">
-					<li class="nav-item">
-						<a class="nav-link " href="#">Accueil</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Nos Programmes</a>
-					</li>
-					<a class="navbar-brand d-none d-lg-block" href="#">
-						<img src="Images/img3.webp" alt="le logo" width="150px">
-					</a>
-					<li class="nav-item ">
-						<a class="nav-link " href="#">
-							Energy Space
+<body>
+
+	<!--================================================= début de la navbar ==========================================-->
+
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-grège bg-grège">
+			<div class="container-fluid">
+				<a class="navbar-brand d-lg-none" href="#">
+					<img src="Images/img3.webp" alt="le logo" width="100px">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav mx-auto">
+						<li class="nav-item">
+							<a class="nav-link " href="#">Accueil</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Nos Programmes</a>
+						</li>
+						<a class="navbar-brand d-none d-lg-block" href="#">
+							<img src="Images/img3.webp" alt="le logo" width="250px">
 						</a>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Blog</a>
-					</li>
-				</ul>
-	
-			</div>
-		</div>
-	</nav>
-	<div class="drapeau">
-		<img src="Images/FRA_2x.png" alt="choix de la page en français">
-		<img src="Images/GBR_2x.png" alt="choix de la langue en anglais">
-	</div>
-</header>
-	<!-- ===============fin de la navbar=============== -->
-<hr class="break-first">
+						<li class="nav-item ">
+							<a class="nav-link " href="#">
+								Energy Space
+							</a>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Blog</a>
+						</li>
+					</ul>
 
-	<!--========== debut de la premiere section après la nav =========-->
-<section class="section-1">
-	<div class="container">
-		<div class="salle">
-			<img class="premiere" src="img/imag salon es.jpeg" alt="image de la salle">
-			<img class="deux" src="img/generateur.png" alt="image">
-		</div>
-	</div>
-	<br>
-	<div class="container">
-		<h1 class="energy">ENERGY SPACE</h1>
-	</div>
-</section>
-	<!--=========== fin de la premiere section ===================-->
-
-	<!-- debut de la section portfolio avec les images defilant en carousel -->
-
-<section class="section-portfolio">
-
-	<h1>
-		Notre startups portfolio
-	</h1>
-	<br>
-	<div class="container col-md-4">
-		<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-			<div class="carousel-indicators">
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
-					aria-current="true" aria-label="Slide 1"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
-					aria-label="Slide 2"></button>
-				<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
-					aria-label="Slide 3"></button>
-			</div>
-			<div class="carousel-inner">
-				<div class="carousel-item active">
-					<img src="img-carousel/carousel1.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel2.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel4.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel5.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel6.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel7.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel8.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel9.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel10.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel11.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel12.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel13.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel15.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel16.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel17.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel8.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel4.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel19.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel20.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel21.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel22.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel23.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/cousel244.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel25.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel26.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel27.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/carousel29.png" class="d-block w-100" alt="...">
-				</div>
-				<div class="carousel-item">
-					<img src="img-carousel/merci.png" class="d-block w-100" alt="...">
 				</div>
 			</div>
-			<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="prev">
-				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Previous</span>
-			</button>
-			<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-				data-bs-slide="next">
-				<span class="carousel-control-next-icon" aria-hidden="true"></span>
-				<span class="visually-hidden">Next</span>
-			</button>
+		</nav>
+		<div class="drapeau">
+			<img src="Images/FRA_2x.png" alt="choix de la page en français">
+			<img src="Images/GBR_2x.png" alt="choix de la langue en anglais">
 		</div>
-	</div>
+	</header>
+	<!-- =========================================== fin de la navbar ============================================== -->
 
-	<!--================= fin de la section portfolio ================-->
+	<hr class="break-first">
 
-</section>
+	<!--============================================ debut de la premiere section après la nav ===========================-->
 
-<hr>
+	<section class="section-1">
+		<div class="">
+			<div class="roww">
 
-<!-- ========debut de la section footer avec  des sous section ==========-->
+				<!-- <div class="col-12 col-md-6">
+					<img class="premiere" src="img/imag salon es.jpeg" alt="image de la salle">
 
-<section class="footer">
+				</div>
+				<div class="col-12 col-md-6">
 
-	<div>
-		<h1>NEWSLETTER</h1>
-		<P>Get our latest info, podcast, advices ...</P>
-		<form class=".box" action="post">
-			<label for="firstname" id="firstname">First Name</label><br>
-			<input type="text" name="" id="firstname">
-			<br>
-			<label for="mail" id="mail">Mail</label><br>
-			<input type="text" id="mail">
-			<br>
-			<input type="checkbox" name="" id="choix">
-			<label for="preference" id="preference">Je préfère recevoir les informations en français</label>
-			<br>
-			<input type="checkbox" name="" id="choix">
-			<label for="preference" id="preference">I wish to receive the content in English</label><br>
-			<button>Submit</button>
-		</form>
-	</div>
-</section>
+					<img class="deux" src="img/generateur.png" alt="image">
 
-<hr>
+				</div>
+				</div> -->
+				<img class="centre" src="img/imag salon es.jpeg" alt="">
+				<div>
+					<img class="objet" src="img/generateur.png" alt="">
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="energy">
+			<h1 class="">ENERGY SPACE</h1>
+		</div>
+	</section>
+	<!--==================================== fin de la premiere section ===========================================-->
 
-<section>
+	<!--========================== debut de la section portfolio avec les images defilant en carousel ======================-->
 
-	<div>
-		<a href="#">
-			<i class="fa-brands fa-facebook-square"></i>
-		</a>
+	<section class="section-portfolio">
+		<h1>
+			Notre startups portfolio
+		</h1>
+		<br>
+		<div class="container">
+			<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+				<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img-carousel/carousel1.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel2.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+					<div class="carousel-item">
+						<img src="img-carousel/carousel3.png" class="d-block w-100" alt="...">
+					</div>
+				</div>
+				<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</section>
 
-		<a href="#">
-			<i class="fa-brands fa-twitter"></i>
-		</a>
+	<!--======================================= fin de la section portfolio ==================================-->
 
-		<a href="#">
-			<i class="fa-brands fa-linkedin"></i>
-		</a>
-		<a href="#">
-			<i class="fa-brands fa-youtube"></i>
-		</a>
-	</div>
-	<div>
-		<p>
-			<i class="fa-regular fa-copyright"></i>2020 - Energy Generation - All rights reserved.
 
-		</p>
-		<p class="arrow"> <a href="#"><i class="fa-duotone fa-chevrons-up"></i></a> </p>
-	</div>
+	<hr>
 
-</section>
+	<!-- ======================================= debut du footer avec les section ==============================-->
+
+	<footer class="footer">
+
+		<!--===================================== debut de la section ils croient en nous =======================-->
+
+		<section class="partenaires1">
+			<div class="believe">
+				<h1>ILS CROIENT EN NOUS</h1>
+			</div>
+			<div class="container my-3">
+				<div class="row ">
+
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_giz.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_haut.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_horizon.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_lomé.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_oif.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_mit.webp" alt=""></a>
+					</div>
+
+				</div>
+				<div class="row my-5">
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/IFDD_LOGO_couleur.webp"
+								alt=""></a></div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg-edf.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg-euro.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg-git.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg-saber.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_afrik.webp" alt=""></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_capital.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_electrik.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_fond.webp" alt=""></a></div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_energy.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/armoiries.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_embassade.webp" alt=""></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_paris.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_reseau.webp" alt=""></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="croire/lg_bleu.webp" alt=""></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--========================================= fin de la section ils croient en nous ===================================-->
+
+		<!--========================================= debut de la section ils parlent de nous ==================================-->
+		<section class="medias">
+			<div>
+				<div class="journaux">
+					<h1>ILS PARLENT DE NOUS</h1>
+				</div>
+
+				<div class="container ">
+					<div class="row my-5">
+
+						<div class="col-4 col-md-2"><a href=""><img class="w-100" src="magazine/le monde.webp"
+									alt=""></a>
+						</div>
+
+						<div class="col-4 col-md-2"><a href=""><img class="w-100" src="magazine/figaro.webp" alt=""></a>
+						</div>
+						<div class="col-4 col-md-2"><a href=""><img class="w-100" src="magazine/afrique.webp"
+									alt=""></a>
+						</div>
+						<div class="col-4 col-md-2"><a href=""><img class="w-100" src="magazine/togo.webp" alt=""></a>
+						</div>
+
+					</div>
+					<div class="row my-5">
+						<div class="col-4 col-md-2"><a href=""><img class="w-100" src="magazine/tribune.webp"
+									alt=""></a></div>
+						<div class="col-4 col-md-2"><a href=""><img class="w-100" src="magazine/f30.webp" alt=""></a>
+						</div>
+						<div class="col-4 col-md-2"><a href=""><img class="w-100" src="magazine/forbes.webp" alt=""></a>
+						</div>
+						<div class="col-4 col-md-2"><a href=""><img class="w-100" src="magazine/le point.webp"
+									alt=""></a>
+						</div>
+						<div class="col-4 col-md-2"><a href=""><img class="w-100" src="magazine/tv5.webp" alt=""></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--=================================================== fin de la section ils parlent de nous  ================================-->
+
+		<!--=================================================== debut de la section newsletter ==============================================-->
+
+		<section class="newsletter">
+			<h1 class="news">NEWSLETTER</h1>
+			<form class="option">
+				<div class="form">
+					Get our latest info, podcasts, advices...<br /><br /><br />
+					First Name<br>
+					<input type="nom"><br /><br />
+					Email<br />
+					<input type="mail"><br />
+				</div>
+				<div class="checkbox">
+					<div>
+						<input type="checkbox">Je prefere recevoir les information en francais<br /><br />
+						<input type="checkbox">I wish to receive the content in English<br />
+					</div>
+					<div><button>subscribe</button></div>
+				</div>
+			</form>
+		</section>
+
+		<!--=================================================== fin de la section newsletter ============================================-->
+
+		<!--==================================================== debut de la section coppyright et lien =========================================-->
+
+
+
+		<section class="lien">
+			<div class="reseaux">
+				<a href="#">
+					<i class="fa-brands fa-facebook-square"></i>
+				</a>
+
+				<a href="#">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+
+				<a href="#">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+
+				<a href="#">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+			</div>
+
+			<div class="lg_foot">
+				<img src="Images/img3.webp" alt="">
+
+			</div>
+			<div>
+				<p class="copy">
+					<i class="fa-regular fa-copyright"></i>2020 - Energy Generation - All rights reserved.
+				</p>
+				<p class="arrow"><a href="#"><i class="fa-solid fa-up-from-line"></i></a></p>
+			</div>
+		</section>
+	</footer>
+
+	<!--===================================================== fin de la section footer ==================================================-->
+
+	<!--================================================= JavaScript Bundle with Popper =================================================-->
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+		crossorigin="anonymous"></script>
 </body>
 
 </html>
