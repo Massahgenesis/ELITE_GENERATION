@@ -4,7 +4,6 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>blog</title>
-	<script src="like.js"> </script>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 	<link rel="stylesheet" href="css/blog.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -28,13 +27,13 @@
 					<a class="nav-link " href="index.html">Accueil</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="programme.html">Nos Programmes</a>
+					<a class="nav-link" href="#">Nos Programmes</a>
 				  </li>
 				   <a class="navbar-brand d-none d-lg-block" href="#">
 					<img src="Images/img3.webp" alt="le logo" width="150px">
 				  </a>
 				  <li class="nav-item ">
-					<a class="nav-link " href="space.html">
+					<a class="nav-link " href="#">
 					  Energy Space
 					</a>
 				  <li class="nav-item">
@@ -54,7 +53,7 @@
 		  
 		  <nav>
 			<div class="onglets">
-			  <a href="#">Home</a>
+			  <a href="blog.html">Home</a>
 			  <a href="formation.html">Formations</a>
 			</div>
 		  </nav>
@@ -76,11 +75,7 @@
 			  <a href="#"> <h1>Coup de projecteur sur le parcours entrepreneuriat de la Formation Solaire à Energy Generation </h1></a>
 			   <a href="#"><p class="description">Parce que le solaire représente une véritable opportunité de création d'emplois pour les jeunes, tout en participant au développement...
 			</p></a>
-			<hr>
-			<div style="display: flex;"> <br> <br>
-				<p id="count"> </p>&nbsp <p>vue</p>
-			   </div>
-			<hr>
+			
 			 </div>
 		   </div> 
 		   
@@ -96,72 +91,17 @@
 					   <p class="auteur">Odjouman Allagbe</p>
 					   <p class="date">Juillet, 24, 2020</p>
 					</div>
-				  <div>
-
-				  </div>
+				  
 			   </div>
 			 <a href="#"> <h1>Spotlight on the entrepreneurial journey from Solar Training to Energy Generation </h1></a>
 			  <a href="#"><p class="description">As solar represents a real opportunity to create jobs for young people while participating in the socio-economic development of African...</p></a>
 			</div>
 		  </div> 
-		   
-		  <div class="article">
-			<div class="left">
-			  <img src="Images/img41.webp" alt="">
-			</div>
-			<div class="right">
-			   <div id="tof">
-				   <img src="Images/photo.jpg" alt="photo">
-					<div id="fot">
-					   <p class="auteur">Odjouman Allagbe</p>
-					   <p class="date">Juillet, 24, 2020</p>
-					</div>
-				  
-			   </div>
-			 <a href="#"> <h1>Bilan d’étape très positif pour la première Formation en Entrepreneuriat Solaire à Energy </h1></a>
-			  <a href="#"><p class="description">Au Togo, le Gouvernement a amorcé sa nouvelle stratégie d’électrification, prévoyant la création de milliers d’emploi dans le secteur du...
-		   </p></a>
-		   
-			</div>
-		  </div> 
-		 
-
-		  <div class="article">
-			<div class="left">
-			  <img src="Images/img41.webp" alt="">
-			</div>
-			<div class="right">
-			   <div id="tof">
-				   <img src="Images/photo.jpg" alt="photo">
-					<div id="fot">
-					   <p class="auteur">Odjouman Allagbe</p>
-					   <p class="date">Juillet, 24, 2020</p>
-					</div>
-				  
-			   </div>
-			 <a href="#"> <h1>Progress report for the first session of the Training in Solar Entrepreneurship at Energy Generation</h1></a>
-			  <a href="#"><p class="description">​ ​ In Togo, the government has launched its new electrification strategy, providing for the creation of thousands of jobs in the...</p></a>
-			</div>
-		  </div> 
-		   
+	
 		  </section>
-		  
-			  <script>
-				const countEl = document.getElementById("count");
-				countvisits();
-		  
-				function countvisits() {
-				  fetch('https://api.countapi.xyz/update/ezokovich/maz/?amount=1')
-					.then((res) => res.json())
-					.then((res) => {
-					  countEl.innerHTML = res.value;
-					});
-				}
-			  </script>
-			
 
-
-	<!-- ======================================= debut du footer avec les section ==============================-->
+	
+		   <!-- ======================================= debut du footer avec les section ==============================-->
 
 	<footer class="footer">
 
@@ -334,7 +274,8 @@
 
 
 
-		  
+
+
 		<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
