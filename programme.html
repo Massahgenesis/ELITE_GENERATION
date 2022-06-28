@@ -3,6 +3,9 @@
 <head>
 	<title>Dashboard</title>
 	<meta charset="utf-8">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+		crossorigin="anonymous" referrerpolicy="no-referrer" />
 	
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> 
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
@@ -10,7 +13,7 @@
 	<!-- CSS only -->
 </head>
 
-
+<body>
 		<nav class="navbar navbar-expand-lg navbar-grège bg-grège">
 			<div class="container-fluid">
 			   <a class="navbar-brand d-lg-none" href="#">
@@ -319,12 +322,12 @@
                         </marquee>
 					</div>
 				</section>
-				<form>
-					<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
+				<form id="formulaire" style="box-shadow: 10px 10px grey; margin-top:20px; background:rgba(199, 183, 156, 0.28);">
+	<div class="page-wrapper bg-gra-03 p-t-45 p-b-50">
         <div class="wrapper wrapper--w790">
             <div class="card card-5">
                 <div class="card-heading">
-                    <h2 class="title">Apply now</h2>
+                    <h2 class="title" style="text-align:center; color: #EA551C;">POSTULEZ MAINTENANT !</h2>
                 </div>
                 <div class="card-body">
                     <form method="POST">
@@ -347,6 +350,21 @@
                                 </div>
                             </div>
                         </div>
+                         <div class="form-row">
+                            <div class="name">Genre</div>
+                            <div class="value">
+                                <div class="input-group">
+                                    <div class="rs-select2 js-select-simple select--no-search">
+                                        <select name="subject" style="height: 50px; width:450px; border-radius: 8px; background:#e5e5e5; border: 0;">
+                                            <option value="">Veuillez selectionner</option>
+                                            <option value="Femme" data-index="0">Femme</option>
+                                            <option value="Homme" data-index="1">Homme</option>
+                                        </select>
+                                        <div class="select-dropdown"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="form-row">
                             <div class="name">Email</div>
                             <div class="value">
@@ -356,7 +374,7 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="name"> Confirm your email</div>
+                            <div class="name"> Confirmez votre email</div>
                             <div class="value">
                                 <div class="input-group">
                                     <input class="input--style-5" type="email" name="email">
@@ -364,7 +382,7 @@
                             </div>
                         </div>
                         <div class="form-row m-b-55">
-                            <div class="name">Phone</div>
+                            <div class="name">Numéro de téléphone (avec indicatif)</div>
                             <div class="value">
                                 <div class="row row-refine">
                                     <div class="col-3">
@@ -383,12 +401,12 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="name">Country</div>
+                            <div class="name">Pays</div>
                             <div class="value">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="subject">
-                                            <option>please select</option>
+                                        <select name="subject" style="height: 50px; width:450px; border-radius: 8px; background:#e5e5e5; border: 0;">
+                                            <option>Veuillez selectionner</option>
                                             <option value="Afrique du sud" data-index="0">South Africa
                                             </option>
                                             <option value="Algérie" data-index="1">Algeria
@@ -459,12 +477,12 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="name">Education Level</div>
+                            <div class="name">Niveau d'étude</div>
                             <div class="value">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="subject">
-                                            <option value="">Please select</option>
+                                        <select name="subject" style="height: 50px; width:450px; border-radius: 8px; background:#e5e5e5; border: 0;">
+                                            <option value="">Veuillez selectionner</option>
                                             <option value="Aucun diplôme supérieur" data-index="0">No diploma</option>
                                             <option value="Bac" data-index="1">A levels / Highschool diploma</option>
                                             <option value="Bac+2" data-index="2">Professional Diploma</option>
@@ -478,12 +496,12 @@
                             </div>
                         </div>
                          <div class="form-row">
-                            <div class="name">Chosen thematic</div>
+                            <div class="name">Thématique choisie</div>
                             <div class="value">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="subject">
-                                            <option value="">Please select</option>
+                                        <select name="subject" style="height: 50px; width:450px; border-radius: 8px; background:#e5e5e5; border: 0;">
+                                            <option value="">Veuillez selectionner</option>
                                             <option value="Energie" data-index="0">Energy</option>
                                             <option value="Agri-business" data-index="1">Agir-food</option>
                                             <option value="Santé &amp; bien-être" data-index="2">Health and wellbeing</option>
@@ -494,12 +512,12 @@
                             </div>
                         </div>
                         <div class="form-row">
-                            <div class="name">Preferred Campus</div>
+                            <div class="name">Campus préféré</div>
                             <div class="value">
                                 <div class="input-group">
                                     <div class="rs-select2 js-select-simple select--no-search">
-                                        <select name="subject">
-                                            <option value="">Please select</option>
+                                        <select name="subject" style="height: 50px; width:450px; border-radius: 8px; background:#e5e5e5; border: 0;">
+                                            <option value="">Veuillez selectionner</option>
                                             <option value="Campus Francophone - Lomé" data-index="0">Francophone Campus - Lome</option>
                                             <option value="Campus Anglophone - Accra" data-index="1">Anglophone Campus - Accra</option>
                                         </select>
@@ -508,14 +526,175 @@
                                 </div>
                             </div>
                         </div>
-                            <button class="btn btn--radius-2 btn--red" type="submit">SEND</button>
+                            <button class="btn btn--radius-2 btn--red" type="submit" style="background:black;">Envoyer</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
+
 </form>
+
+
+<!-- ======================================= debut du footer avec les section ==============================-->
+
+	<footer class="footer" style="margin-top:20px; width:100%;">
+
+		<!--===================================== debut de la section ils croient en nous =======================-->
+
+		<section class="partenaires1">
+			<div class="s6">
+				<h1 style="color:white;">ILS CROIENT EN NOUS</h1>
+			</div>
+			<div class="container my-3">
+				<div class="row ">
+
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo1.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo2.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo3.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo4.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo5.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo6.webp" alt="photo"></a>
+					</div>
+
+				</div>
+				<div class="row my-5">
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo7.webp" alt="photo"></a></div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo8.webp" alt="photo">></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo9.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo10.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo11.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo12.webp" alt="photo"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo13.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo14.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo15.webp" alt="photo"></a></div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo16.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo17.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo18.webp" alt="photo"></a>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo19.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo20.webp" alt="photo"></a>
+					</div>
+					<div class="col-4 col-md-2"><a href=""><img class="w-50" src="img/logo21.webp" alt="photo"></a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--========================================= fin de la section ils croient en nous ===================================-->
+
+		<!--========================================= debut de la section ils parlent de nous ==================================-->
+
+		<section class="s7">
+			<div>
+				<div class="journaux">
+					<h1 style="color:white;">ILS PARLENT DE NOUS</h1>
+				</div>
+
+				<div class="container ">
+					<div class="row my-5" id="box">
+
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic1.jpg.webp" alt="photo"></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic2.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic3.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic4.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic5.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic6.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic7.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic8.webp" alt="photo" ></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic9.webp" alt="photo"></a></div></div>
+						<div><div class="col-4 col-md-2"><a href=""><img class="w-100" src="img/communic10.webp" alt="photo"></a></div></div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--=================================================== fin de la section ils parlent de nous  ================================-->
+
+		<!--=================================================== debut de la section newsletter ==============================================-->
+
+		<section class="newsletter">
+			<h1 class="news">NEWSLETTER</h1>
+			<form class="option">
+				<div class="form">
+					Get our latest info, podcasts, advices...<br /><br /><br />
+					First Name<br>
+					<input type="nom"><br /><br />
+					Email<br />
+					<input type="mail"><br />
+				</div>
+				<div class="checkbox">
+					<select>
+						<option type="checkbox">Je prefere recevoir les information en francais<br /><br />
+						<option type="checkbox">I wish to receive the content in English<br />
+					</select>
+					<div><button>subscribe</button></div>
+				</div>
+			</form>
+		</section>
+
+		<!--=================================================== fin de la section newsletter ============================================-->
+
+		<!--==================================================== debut de la section coppyright et lien =========================================-->
+
+
+
+		<section class="lien">
+			<div class="reseaux">
+				<a href="#">
+					<i class="fa-brands fa-facebook-square"></i>
+				</a>
+
+				<a href="#">
+					<i class="fa-brands fa-twitter"></i>
+				</a>
+
+				<a href="#">
+					<i class="fa-brands fa-linkedin"></i>
+				</a>
+
+				<a href="#">
+					<i class="fa-brands fa-youtube"></i>
+				</a>
+			</div>
+
+			<div class="lg_foot">
+				<img src="Images/img3.webp" alt="">
+
+			</div>
+			<div>
+				<p class="copy" style="background:#c7b79c96; color:#232D84;">
+					<i class="fa-regular fa-copyright"></i>2020 - Energy Generation - All rights reserved.
+				</p>
+				<p class="arrow" style="background:#232D84;"><a href="#"><i class="fa-solid fa-angles-up"></i></a></p>
+			</div>
+		</section>
+	</footer>
+
+	<!--===================================================== fin de la section footer ==================================================-->
+
+</section>
+
 				
 		<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>		
