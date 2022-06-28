@@ -1,62 +1,61 @@
 <?php
-// connection a la base de donnees
-$host = "localhost";
-$dbname = "energy-generation";
-$username = "root";
-$password = "";
+require_once('connect.php');
 
-$conn = mysqli_connect( $host,
-                        $username,
-                        $password,
-                        $dbname);
-
-if (mysqli_connect_errno()) {
-    die("connection error: " .mysqli_connect_error());
-}
-
-    $nom = $_POST["nom"];
-    $prenom = $_POST["prenom"];
-    $email = $_POST["Email"];
-    $confirmail = $_POST["confirmmail"];
-    $numero = $_POST["numero"];
-    $confirnum = $_POST["phonenum"];
-    $pays = $_POST["pays"];
-    $niveau = $_POST["niveau"];
-    $thematique = $_POST["thematique"];
-    $campusprefere = $_POST["campus"];
+    $nom = $_POST["first_name"];
+    $prenom = $_POST["last_name"];
+    $genre= $_POST["company"];
+    $email = $_POST["email"];
+    $confirmail = $_POST["area_code"];
+    $numero = $_POST["phone"];
+    $pays = filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT);
+    $niveau = filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT);
+    $thematique = filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT);
+    $campus = filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT);
     
 
     
-    
-    if (isset($_POST["name"])and 
-     isset($_POST["prenom"]) and  
-     isset ($_POST["Email"]) and 
-     isset ($_POST["confirmmail"]) and
-     isset ($_POST["numero"])and
-     isset ($_POST["phonenum"])and
-     isset ($_POST["pays"])and
-     isset ($_POST["niveau"])and
-     isset ($_POST["thematique"])and
-     isset ($_POST["campus"]))
-     {
+    if (
+        isset ($nom)and
+        isset ($prenom)and
+        isset ($genre)and
+        isset ($email)and
+        isset ($confirmail)and
+        isset ($numero)and
+        isset ($pays)and
+        isset ($niveau)and
+        isset ($thematique)and
+        isset($campus))
+    {
      
-        $insertion = "insert into formulaire (name, prenom, Email, confirmail, numero, phonenum, pays, niveau, thematique, campus ) 
-        value('$nom','$prenom','$Email','$confirmail' , '$numero', '$phonenum', '$pays', '$niveau', '$thematique', '$campus')";
+         $insertion = "INSERT into formulaire (nom, prenom, genre, email, confirm_mail, numero_telephone, pays, niveau_etude, thematique_choisie, campus_preféré ) 
+         value('$nom','$prenom','$genre','$email' , '$confirmail', '$numero', '$pays', '$niveau', '$thematique', '$campus')";
 
-        if($conn->query($insertion) === TRUE){
-            echo "New record created successfully";
-        } else {
-            echo "Error: " . $insertion . "<br>" . $conn->error;
+         if($conn->query($insertion) === TRUE){
+             echo "New record created successfully";
+         } else {
+             echo "Error: " . $insertion . "<br>" . $conn->error;
         }
+    }
+    else{
+        echo('error');
+    }
+
+
     
-     }else{
-        echo ($_POST["name"]. " ,"  .  $_POST["prenom"] . " ," .  
-        $_POST["Email"] ." ," .   $_POST["confirmail"]. " ,"  .
-          $_POST["numero"]. " ,"  .  $_POST["phoinenum"]. " ,"  . 
-           $_POST["pays"]. " ,"  .  $_POST["niveau"]. " ,"  . 
-            $_POST["thematique"]. " ,"  .  $_POST["campus"]  );
-     }
-     $conn->close();
+    //   else{
+    //       echo ($_POST["nom"]. " ," .
+    //             $_POST["prenom"] . " ," .  
+    //              $_POST["company"] ." ," .   
+    //             $_POST["email"]. " ," .
+    //             $_POST["area_code"]. " ,"  .
+    //             $_POST["phone"]. " ,"  . 
+    //             filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT). " ,"  . 
+    //             filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT). " ,"  . 
+    //             filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT). " ,"  . 
+    //             filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT) 
+    //         );
+    //   }
+       $conn->close();
 
 
 
