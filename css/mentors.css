@@ -74,34 +74,165 @@ div .img{
    
    .sliders{
 
-    background-color: #019FE3;
+    background-color: rgba(30, 144, 255,1.0);
     margin: 0 5%;
    }
-   .lead{
+  .sliders .rejoindre{
+
+    text-align: center;
+    background-color: #232D84;
+    margin-top: 5px;
+    
+   }
+
+   .sliders .rejoindre p{
 
     font-size: 50px;
     font-weight: bold;
     color: white;
    }
 
-    button{
+   .sliders .rejoindre button{
 
-        margin-left: 250px;
-        font-size: 40px;
+    font-size: 40px;
+    font-weight: bold;
+    color: #ee5a24c9;
+    padding: 10px;
+     border-radius: 20px;
+     background-color: #d8d5d196;
+     margin-bottom: 20px;
+    
+   }
+
+   .sliders .rejoindre button:hover{
+
+    box-shadow: 2px 2px 3px 3px white;
+    color: white;
+    font-size: 43px;
+    transition: 1s;
+   }
+   
+
+    #texte{
+
+        
+        background-color: #8db5eb;
+    }
+
+    b{
+        color: #EA551C;
+        text-align: center;
+        font-size: 50px;
         padding: 20px;
-        color: red;
+        
     }
     .programme{
 
+        font-size: 35px;
+    }
+
+    /***************************************** traitement de la section participation ****************************/
+
+    .participation{
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        background-color: #c7b79c64;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 30px;
+    }
+
+    .participate{
+
+        color: rgba(255, 165, 2,1.0);
+    }
+
+    /************************************ traitement de la section en savoir plus **********************************/
+
+    .savoir{
+
+        font-size: 20px;
+       
+       
+    }
+    .devenez{
+
+        color: #232D84;
+        padding: 20px;
+    }
+
+    /****************************************** traitement de la section mentors ***********************************************************/
+
+    .mentors{
+
+        font-size: 20px;
+    
+    }
+    .guide{
+
         font-size: 40px;
+        font-weight: bold;
+        text-align: center;
+        background-color: #232D84;
+        margin-top: 5px;
+        margin-bottom: 15px;
+        color: white;
+        padding: 20px;
+
+    }
+    #stedman{
+
+        background-color: #232D84;
+        color: white;
+        margin-bottom: 5px;
+    }
+    #cairns{
+
+        background-color: #EA551C;
+        color: white;
+        margin-bottom: 5px;
+    }
+    .matt{
+        color:white;
+    }
+    .paul{
+        color: #232D84;
+    } 
+    #mentors1{
+        background-color: #EA551C;
+    }
+
+    /********************************************** traitement de la section proposition ********************************************/
+
+
+    .propos{
+        font-size: 50px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .postulez{
+
+        font-size: 40px;
+        font-weight: bold;
+        color: #ee5a24c9;
+        padding: 10px;
+         border-radius: 20px;
+         background-color: #d8d5d196;
+    }
+    .postulez:hover{
+
+     box-shadow: 2px 2px 3px 3px white;
+    color: rgba(241, 242, 246, 0.849);
+    font-size: 43px;
+    transition: 1s;
     }
 
 
 
 
-
-
-     /*************************************** traitement du footer *******************************/
+     /*************************************** traitement du footer **********************************************/
 
      .footer{
 
@@ -121,9 +252,9 @@ div .img{
     
         text-align: center;
         padding: 30px;
-        background-color:#c7b79c96 ;
+        background-color:#232D84 ;
         font-size: 40px;
-        color: #232D84;
+        color: white;
         font-weight: bold;
         margin-top: 1%;
     
@@ -136,17 +267,17 @@ div .img{
     .journaux{
     
         text-align: center;
-        background-color:#c7b79c96;
-        color: #232D84;
+        background-color:#232D84;
+        color:white;
         font-size: 40px;
-        padding: 5px;
         font-weight: bold;
+        padding: 30px;
     }
     
     .medias .container{
     
         background-color: white;
-        padding: 30px;
+        
     
     }
     
@@ -157,21 +288,24 @@ div .img{
     .newsletter .news{
     
         text-align: center;
-        color: #232D84;
-        background-color: #c7b79c96;
-        padding: 10px;
+        color: white;
+        background-color: #232D84;
+        padding: 30px;
+        font-weight: bold;
     }
     
     .form{
         margin-left: 40%;
+       
     }
     .form input{
-        width: 400px;
+        width: 100%;
         height: 50px;
         border-top: none;
         border-right: none;
         border-left: none;
         background-color: #c7b79c64;
+        border-radius: 10px;
         
     }
     .form input:focus{
@@ -194,10 +328,21 @@ div .img{
         margin-left: 20px;
         margin-right: 150px;
         background: #26E6F2;
+        border-radius: 10px;
         padding: 10px;
         border: none;
         
     
+    }
+
+    .checkbox button:hover{
+
+        box-shadow: 2px 2px 3px 3px white;
+        color: rgba(241, 242, 246, 0.849);
+        font-size: 25px;
+        background-color: rgba(255, 99, 72,1.0);
+        border-radius: 10px;
+        transition: 1s;
     }
     
     /********************************* debut dr traitement de la section lien ************************/
@@ -246,6 +391,10 @@ div .img{
         right: 50px;
         border-radius: 50%;
     }
+    .arrow:hover{
+
+        background-color:rgba(255, 99, 72,1.0) ;
+    }
     .arrow i{
         width: 55px;
         position: fixed;
@@ -254,6 +403,633 @@ div .img{
         right: 50px;
         font-size: 30px;
     }
+    .arrow i:hover{
+
+        font-size: 33px;
+        transform: 0.50s;
+    }
+
+    /************************************* les medias queries *********************************/
+
+@media (max-width:600px){
+
+
+	.drapeau img{
+		width: 50px;
+		margin: 0 5px;
+	}
+	
+
+	.nabar-brand img{
+		width: 200px;
+	}
+
+
+    .navbar .navbar-nav .nav-link{
+	color:black;
+	font-size: 20px;
+	padding: 3 15px;
+	
+    }
+
+	.partenaires1 .believe{
+
+		padding: 10px;
+		font-size: 20px;
+		background-color:#c7b79c96 ;
+	
+	
+	}
+	
+
+	
+	.break-first{
+
+		background-color: #232D84;
+		color: #232D84;
+		width: 300px;
+		height: 5px;
+		justify-content: center;
+		border: none;
+		margin:10px auto;
+	}
+	
+
+	.centre{
+		width: 40%;
+		background-color: blue;
+		
+	}
+
+	.centre img{
+		width: 100px;
+			
+	}
+	.objet img{
+			width: 40px;
+				
+	}	
+	.form{
+				margin-left: 5%;
+	}
+	.checkbox{
+				margin-left: 5%;
+				margin-top: 20px;
+				flex-direction: column;		
+				
+	 }
+
+	.form input{
+				width: 300px;
+				height: 50px;
+				
+	}
+	.checkbox button{
+			
+			margin-top: 5px;
+			margin-left: 120px;
+			padding: 5px;
+			
+			
+		
+	}
+
+	.reseaux a i{
+
+			font-size: 40px;
+			padding: 20px;
+	}
+
+	.copy{
+
+			font-size: 10px;
+			
+	}
+	.lg_foot img{
+
+			width: 150px;
+	}
+
+	.arrow{
+
+			width: 35px;
+			height: 35px;
+			right: 30px;
+			
+			
+	}	
+
+		.arrow i{
+		width: 35px;
+			bottom: 50px;
+			right: 30px;
+			font-size: 20px;
+	}
+		
+    }	
+
+
+
+
+@media screen and (max-width:768px) {
+
+   
+	.form{
+		margin-left: 17%;
+		font-size: 25px;
+	}
+
+	.form input{
+
+		width: 500px;
+		height: 50px;
+		
+	}
+
+	.checkbox{
+		margin-left: 17%;
+		margin-top: 20px;
+			
+		
+}
+.checkbox button{
+			
+	margin-top: 30px;
+	padding: 5px;
+	
+	
+
+}
+.reseaux a i{
+
+	font-size: 50px;
+	padding: 20px;
+}
+
+.lg_foot img{
+
+	width: 250px;
+}
+
+.copy{
+
+	font-size: 20px;
+	
+}
+
+.drapeau img{
+	width: 100px;
+	margin: 0 7px;
+}
+
+.break-first{
+
+	width: 400px;
+	
+}
+
+
+	
+}
+
+@media screen and (max-width:820px){
+
+
+	.drapeau img{
+		width: 100px;
+		margin: 0 5px;
+	}
+
+	.break-first{
+
+		width: 400px;
+		
+	}
+
+	.form{
+		margin-left: 17%;
+		font-size: 25px;
+	}
+
+	.form input{
+
+		width: 500px;
+		height: 50px;
+		
+	}
+	.checkbox{
+		margin-left: 17%;
+		margin-top: 20px;
+		
+			
+		
+}
+
+
+.checkbox button{
+			
+	margin-top: 30px;
+	padding: 5px;
+	
+
+}
+
+.reseaux a i{
+
+	font-size: 50px;
+	padding: 20px;
+}
+
+.lg_foot img{
+
+	width: 250px;
+}
+
+.copy{
+
+	font-size: 20px;
+	
+}
+
+
+
+}
+
+@media screen and (max-width:912px){
+
+
+	.drapeau img{
+		width: 100px;
+		margin: 0 5px;
+	}
+
+	.break-first{
+
+		width: 400px;
+		
+	}
+
+	.form{
+		margin-left: 17%;
+		font-size: 25px;
+	}
+
+	.form input{
+
+		width: 500px;
+		height: 50px;
+		
+	}
+	.checkbox{
+		margin-left: 17%;
+		margin-top: 20px;
+		font-size: 17px
+		
+			
+		
+}
+
+
+.checkbox button{
+			
+	margin-top: 30px;
+	padding: 5px;
+	
+
+}
+
+.reseaux a i{
+
+	font-size: 50px;
+	padding: 20px;
+}
+
+.lg_foot img{
+
+	width: 250px;
+}
+
+.copy{
+
+	font-size: 20px;
+	
+}
+
+
+
+
+}
+
+@media screen and (max-width:540px){
+
+
+	.drapeau img{
+		width: 90px;
+		margin: 0 5px;
+	}
+	
+
+	.nabar-brand img{
+		width: 200px;
+	}
+
+
+    .navbar .navbar-nav .nav-link{
+	color:black;
+	font-size: 20px;
+	padding: 3 15px;
+	
+    }
+
+    .participate{
+        font-size: 35px;
+    }
+
+	.sliders img{
+
+        margin-bottom: 5px;
+    }
+
+	.partenaires1 .believe{
+
+		padding: 10px;
+		font-size: 20px;
+		background-color:#c7b79c96 ;
+	
+	
+	}
+	
+
+	
+	.break-first{
+
+		background-color: #232D84;
+		color: #232D84;
+		width: 300px;
+		height: 5px;
+		justify-content: center;
+		border: none;
+		margin:10px auto;
+	}
+
+	
+	.form{
+				margin-left: 5%;
+				font-size: 15px;
+	}
+	.checkbox{
+				margin-left: 5%;
+				margin-top: 20px;
+				flex-direction: column;	
+				font-size: 15px;	
+				
+	 }
+
+	.form input{
+				width:100%;
+				height: 40px;
+
+				
+	}
+	.checkbox button{
+			
+			margin-top: 17px;
+			margin-left: 25%;
+			padding: 5px;
+			
+			
+		
+	}
+
+	.reseaux a i{
+
+			font-size: 40px;
+			padding: 20px;
+	}
+
+	.copy{
+
+			font-size: 10px;
+			
+	}
+	.lg_foot img{
+
+			width: 150px;
+	}
+
+	.arrow{
+
+			width: 35px;
+			height: 35px;
+			right: 30px;
+			
+			
+	}	
+
+		.arrow i{
+		width: 35px;
+			bottom: 50px;
+			right: 30px;
+			font-size: 20px;
+	}
+
+
+}
+
+@media screen and (max-width:280px){
+
+
+	.nabar-brand img{
+		width: 50px;
+	}
+
+
+	.drapeau img{
+		width: 50px;
+		margin: 0 5px;
+	}
+	
+	.break-first{
+
+		width: 200px;
+		
+	}
+    .sliders img{
+
+        height: 200px;
+    }
+    b{
+        font-size: 30px;
+        padding: 20px;
+        
+    }
+
+    .participate{
+        font-size: 20px;
+    }
+
+    .sliders .rejoindre p{
+
+        font-size: 30px;
+       }
+    
+       .sliders .rejoindre button{
+    
+        font-size: 20px;
+        padding: 5px;
+         margin-bottom: 5px;
+        
+       }
+
+       .guide{
+
+        font-size: 20px;
+        padding: 10px;
+        margin-bottom: 3px;
+        margin-top: 0px;
+
+    }
+    .propos{
+        font-size: 30px;
+    }
+
+    .postulez{
+
+        font-size: 20px;
+    }
+
+    .journaux{
+        font-size: 20px;
+        padding: 5px;
+    }
+    .newsletter .news{
+        padding: 10px;
+        
+    }
+
+	.form{
+		
+		font-size: 10px;
+	}
+
+	.form input{
+		height: 30px;
+		
+	}
+	.checkbox{
+		
+		margin-top: 20px;
+		flex-direction: column;	
+		font-size: 15px;	
+		
+}
+.checkbox button{
+    margin-left: 0px;
+   margin-left: 15px;
+
+}
+
+	.reseaux a i{
+
+		font-size: 30px;
+		padding: 10px;
+}
+
+.copy{
+
+		font-size: 10px;
+		
+}
+.lg_foot img{
+
+		width: 100px;
+}
+
+.arrow{
+
+		width: 35px;
+		height: 35px;
+		right: 50px;
+		
+		
+}	
+
+	.arrow i{
+	width: 35px;
+		bottom: 50px;
+		right: 55px;
+		font-size: 15px;
+}
+
+.partenaires1 .believe{
+
+	padding: 0px;
+	
+}
+
+
+}
+
+@media screen and (max-width:412px){
+
+
+	.form{
+		font-size: 15px;
+	}
+	
+	.form input{
+	
+		width: 100%;
+		height: 30px;
+		
+	}
+	
+	.reseaux a i{
+	
+		font-size: 30px;
+		padding: 10px;
+	}
+	
+	.copy{
+	
+		font-size: 10px;
+		
+	}
+	.lg_foot img{
+	
+		width: 100px;
+	}
+	
+	.arrow{
+	
+		width: 35px;
+		height: 35px;
+		right: 55px;
+		
+		
+	}	
+	
+	.arrow i{
+	width: 35px;
+		bottom: 50px;
+		right: 55px;
+		font-size: 15px;
+	}
+
+
+}
+
+
+
+
+
+@media (min-width:900px) {
+	
+	.nabar-brand img{
+		width: 150px;
+	}
+
+}
     
     
     
