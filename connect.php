@@ -2,7 +2,7 @@
 
 // connection a la base de donnees
 $host = "localhost";
-$dbname = "energy-generation";
+$dbname = "energie-generation";
 $username = "root";
 $password = "";
 

@@ -151,7 +151,7 @@
 				countvisits();
 		  
 				function countvisits() {
-				  fetch('https://api.countapi.xyz/update/ezokovich/maz/?amount=1')
+				  fetch('https://api.countapi.xyz/update/ezokovich/maz/?amount=-1')
 					.then((res) => res.json())
 					.then((res) => {
 					  countEl.innerHTML = res.value;
