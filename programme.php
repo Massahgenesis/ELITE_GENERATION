@@ -7,10 +7,10 @@ require_once('connect.php');
     $email = $_POST["email"];
     $confirmail = $_POST["area_code"];
     $numero = $_POST["phone"];
-    $pays = filter_input(INPUT_POST, "subject2", FILTER_VALIDATE_INT);
-    $niveau = filter_input(INPUT_POST, "subject2", FILTER_VALIDATE_INT);
-    $thematique = filter_input(INPUT_POST, "subject3", FILTER_VALIDATE_INT);
-    $campus = filter_input(INPUT_POST, "subject4", FILTER_VALIDATE_INT);
+    $pays = filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT);
+    $niveau = filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT);
+    $thematique = filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT);
+    $campus = filter_input(INPUT_POST, "subject", FILTER_VALIDATE_INT);
     
 
     
