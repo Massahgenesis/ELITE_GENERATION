@@ -53,13 +53,13 @@ Pour plus de détaille cliquez ici https://github.com/ELITES-007/ELITE_GENERATIO
 10
 ###TODO :
 
-11
+
 - Revoir et parfaire le design
-12
+
 - Ajouter au blog la fonctionnalité des likes et des commentaires 
 
 ###Contact :
 
 - sandrinetohe5@gmail.com
-13
+
 ​
