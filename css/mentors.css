@@ -3,6 +3,7 @@
 	margin: 0;
 	box-sizing: border-box;
 	font-family: arial, sans-serif;
+	scroll-behavior: smooth;
 }
 
 	/************************************** stylisation de la navbar *******************************************/
@@ -27,9 +28,10 @@
 	
 }
 
-ul li a:hover{
+.navbar .navbar-nav .nav-link:hover{
 
-	background-color:#FEAE4A;
+	background-color:white;
+	color: rgba(255, 99, 72,1.0);
 	border-radius: 20px;
 	transform: translateY(3px);
 	transition: 1s;
@@ -74,7 +76,7 @@ div .img{
    
    .sliders{
 
-    background-color: rgba(30, 144, 255,1.0);
+    background-color: rgba(247, 241, 227,1.0);
     margin: 0 5%;
    }
   .sliders .rejoindre{
@@ -116,7 +118,7 @@ div .img{
     #texte{
 
         
-        background-color: #8db5eb;
+        background-color: #8395a7;
     }
 
     b{
@@ -145,7 +147,7 @@ div .img{
 
     .participate{
 
-        color: rgba(255, 165, 2,1.0);
+        color: #EA551C;
     }
 
     /************************************ traitement de la section en savoir plus **********************************/
@@ -251,15 +253,18 @@ div .img{
     .partenaires1 .believe{
     
         text-align: center;
-        padding: 30px;
+        padding: 20px;
         background-color:#232D84 ;
         font-size: 40px;
         color: white;
         font-weight: bold;
         margin-top: 1%;
     
-    
     }
+
+	.partenaires1 .container{
+		background-color: rgba(247, 241, 227,1.0);
+	}
     
     /******************************* debut de traitement de la section medias *************************/
     
@@ -271,12 +276,12 @@ div .img{
         color:white;
         font-size: 40px;
         font-weight: bold;
-        padding: 30px;
+        padding: 20px;
     }
     
     .medias .container{
     
-        background-color: white;
+        background-color: rgba(247, 241, 227,1.0);
         
     
     }
@@ -290,7 +295,7 @@ div .img{
         text-align: center;
         color: white;
         background-color: #232D84;
-        padding: 30px;
+        padding: 20px;
         font-weight: bold;
     }
     
