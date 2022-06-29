@@ -1,3 +1,49 @@
+<?php
+    $host = "localhost";
+    $dbname = "energie-generation";
+    $username = "root";
+    $password = "";
+     $id_article=3;       
+    $conn = mysqli_connect( $host,
+                            $username,
+                            $password,
+                            $dbname);
+            
+    if (mysqli_connect_errno()) {
+        die("Connection error: " . mysqli_connect_error());
+	}  
+	
+	if (isset($_POST['submit-commentaire'])) {
+       if(isset($_POST['pseudo'],$_POST['commentaire']) AND !empty($_POST['pseudo']) AND !empty($_POST['commentaire']) ){
+			  $pseudo =htmlspecialchars($_POST['pseudo']);
+			  $commentaire = htmlspecialchars($_POST['commentaire']);
+
+   
+			  $sql = "INSERT INTO commentaire (pseudo,commentaire)
+        VALUES (?, ?)";
+ 
+ $stmt = mysqli_stmt_init($conn);
+
+ if ( ! mysqli_stmt_prepare($stmt, $sql)) {
+  
+	 die(mysqli_error($conn));
+	 $conn->close();
+ }
+ 
+ mysqli_stmt_bind_param($stmt, "ss",
+						$pseudo,
+						$commentaire);
+ 
+ mysqli_stmt_execute($stmt);
+	   } else{
+		   $c_error="tout les champ doivent etre completer";
+	   }
+		
+	}
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -73,8 +119,8 @@
 					 </div>
 				   
 				</div>
-			  <a href="commentaire.php"> <h1>Coup de projecteur sur le parcours entrepreneuriat de la Formation Solaire à Energy Generation </h1></a>
-			   <a href="commentaire.php"><p class="description">Parce que le solaire représente une véritable opportunité de création d'emplois pour les jeunes, tout en participant au développement...
+			  <a href="#"> <h1>Coup de projecteur sur le parcours entrepreneuriat de la Formation Solaire à Energy Generation </h1></a>
+			   <a href="#"><p class="description">Parce que le solaire représente une véritable opportunité de création d'emplois pour les jeunes, tout en participant au développement...
 			</p></a>
 			<hr>
 			<div style="display: flex;"> <br> <br>
@@ -84,74 +130,35 @@
 			 </div>
 		   </div> 
 		   
-		   
-		   <div class="article">
-			<div class="left">
-			  <img src="Images/ez.jpg" alt="">
-			</div>
-			<div class="right">
-			   <div id="tof">
-				   <img src="Images/photo.jpg" alt="photo">
-					<div id="fot">
-					   <p class="auteur">Odjouman Allagbe</p>
-					   <p class="date">Juillet, 24, 2020</p>
-					</div>
-				  <div>
-
-				  </div>
-			   </div>
-			 <a href="#"> <h1>Spotlight on the entrepreneurial journey from Solar Training to Energy Generation </h1></a>
-			  <a href="#"><p class="description">As solar represents a real opportunity to create jobs for young people while participating in the socio-economic development of African...</p></a>
-			</div>
-		  </div> 
-		   
-		  <div class="article">
-			<div class="left">
-			  <img src="Images/img41.webp" alt="">
-			</div>
-			<div class="right">
-			   <div id="tof">
-				   <img src="Images/photo.jpg" alt="photo">
-					<div id="fot">
-					   <p class="auteur">Odjouman Allagbe</p>
-					   <p class="date">Juillet, 24, 2020</p>
-					</div>
-				  
-			   </div>
-			 <a href="#"> <h1>Bilan d’étape très positif pour la première Formation en Entrepreneuriat Solaire à Energy </h1></a>
-			  <a href="#"><p class="description">Au Togo, le Gouvernement a amorcé sa nouvelle stratégie d’électrification, prévoyant la création de milliers d’emploi dans le secteur du...
-		   </p></a>
-		   
-			</div>
-		  </div> 
-		 
-
-		  <div class="article">
-			<div class="left">
-			  <img src="Images/img41.webp" alt="">
-			</div>
-			<div class="right">
-			   <div id="tof">
-				   <img src="Images/photo.jpg" alt="photo">
-					<div id="fot">
-					   <p class="auteur">Odjouman Allagbe</p>
-					   <p class="date">Juillet, 24, 2020</p>
-					</div>
-				  
-			   </div>
-			 <a href="#"> <h1>Progress report for the first session of the Training in Solar Entrepreneurship at Energy Generation</h1></a>
-			  <a href="#"><p class="description">​ ​ In Togo, the government has launched its new electrification strategy, providing for the creation of thousands of jobs in the...</p></a>
-			</div>
-		  </div> 
-		   
 		  </section>
+
+			 <br><br>
+
+        <form  method="POST">
+
+       <input type="text" name="pseudo" placeholder="votre pseudo"><br>
+      <textarea name="commentaire" placeholder="entrer votre commentaire ..."></textarea><br>
+      <input type="submit" value="poster" name="submit-commentaire"><br>
+		</form> 
 		  
+
+		<?php
+
+		if (isset($c_error)){
+
+            echo($c_error);
+
+		}
+		while($c =$commentaire->fetch()){
+			$c['commentaire'];
+		}
+		?>
 			  <script>
 				const countEl = document.getElementById("count");
 				countvisits();
 		  
 				function countvisits() {
-				  fetch('https://api.countapi.xyz/update/ezokovich/maz/?amount=-1')
+				  fetch('https://api.countapi.xyz/update/ezokovich/maz/?amount=1')
 					.then((res) => res.json())
 					.then((res) => {
 					  countEl.innerHTML = res.value;
