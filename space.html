@@ -4,8 +4,9 @@
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="shortcut icon" type="image/webp" href="Images/e.png"/>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Dashboard</title>
+	<title>Energy-generation</title>
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/space.css">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -323,13 +324,13 @@
 
 		<section class="newsletter">
 			<h1 class="news">NEWSLETTER</h1>
-			<form class="option">
+			<form class="option" method="POST" action="form.php">
 				<div class="form">
 					Get our latest info, podcasts, advices...<br /><br /><br />
 					First Name<br>
-					<input type="nom"><br /><br />
+					<input type="nom" name="nom"><br /><br />
 					Email<br />
-					<input type="mail"><br />
+					<input type="mail" name="email"><br />
 				</div>
 				<div class="checkbox">
 					<div>
