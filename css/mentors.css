@@ -23,7 +23,7 @@
 }
 .navbar .navbar-nav .nav-link{
 	color:black;
-	font-size: 25px;
+	font-size: 20px;
 	padding: 5 20;
 	
 }
@@ -265,6 +265,8 @@ div .img{
 	.partenaires1 .container{
 		background-color: rgba(247, 241, 227,1.0);
 	}
+	
+	
     
     /******************************* debut de traitement de la section medias *************************/
     
