@@ -341,7 +341,7 @@
                     <h2 class="title" style="text-align:center; color: #EA551C;">POSTULEZ MAINTENANT !</h2>
                 </div>
                 <div class="card-body">
-                    <form method="POST">
+                    <form method="POST" action="programme.php">
                         <div class="form-row m-b-55">
                             <div class="name">Name</div>
                             <div class="value">
@@ -380,7 +380,7 @@
                             <div class="name">Email</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="text" name="company" required>
+                                    <input class="input--style-5" type="text" name="email" required>
                                 </div>
                             </div>
                         </div>
@@ -388,7 +388,7 @@
                             <div class="name"> Confirmez votre email</div>
                             <div class="value">
                                 <div class="input-group">
-                                    <input class="input--style-5" type="email" name="email" required>
+                                    <input class="input--style-5" type="email" name="area_code" required>
                                 </div>
                             </div>
                         </div>
@@ -398,13 +398,13 @@
                                 <div class="row row-refine">
                                     <div class="col-3">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="area_code" required>
+                                            <input class="input--style-5" type="number" name="area" required>
                                             <label class="label--desc">Area Code</label>
                                         </div>
                                     </div>
                                     <div class="col-9">
                                         <div class="input-group-desc">
-                                            <input class="input--style-5" type="text" name="phone" required>
+                                            <input class="input--style-5" type="number" name="phone" required>
                                             <label class="label--desc">Phone Number</label>
                                         </div>
                                     </div>

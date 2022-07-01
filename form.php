@@ -4,10 +4,10 @@ require_once('connect.php');
 
 $nom = $_POST["nom"];
 $email = $_POST["email"];
-$langue = filter_input(INPUT_POST, "langue", FILTER_VALIDATE_INT); 
-
-
- 
+$langue = $_POST ["langue"];
+//var_dump($_POST);
+ //echo("$langue");
+ //die();
 $sql = "INSERT INTO newsletter (nom, email,langue)
         VALUES (?, ?, ?)";
 
@@ -17,7 +17,7 @@ if ( ! mysqli_stmt_prepare($stmt, $sql)) {
     die(mysqli_error($conn));
 }
 
-mysqli_stmt_bind_param($stmt, "ssi",
+mysqli_stmt_bind_param($stmt, "sss",
                        $nom,
                        $email,
                        $langue);
